@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><!--CityGML Dataset produced with CityGML Export Plugin for Sketchup by GeoRES --><!--http://www.geores.de --><!-- Modified by GMLOffset.xslt at Fri Mar 9 2012 -->
+<core:CityModel
+      xsi:schemaLocation="http://www.opengis.net/citygml/2.0 http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd  http://www.opengis.net/citygml/building/2.0 http://schemas.opengis.net/citygml/building/2.0/building.xsd http://www.opengis.net/citygml/generics/2.0 http://schemas.opengis.net/citygml/generics/2.0/generics.xsd"
+      xmlns:core="http://www.opengis.net/citygml/2.0"
+      xmlns="http://www.opengis.net/citygml/profiles/base/2.0"
+      xmlns:bldg="http://www.opengis.net/citygml/building/2.0"
+      xmlns:gml="http://www.opengis.net/gml" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:gen="http://www.opengis.net/citygml/generics/2.0">
+      <gml:name>Beispiel für generische Attribute</gml:name>
+      <gml:boundedBy>
+            <gml:Envelope srsDimension="3" srsName="CH1903">
+                  <gml:lowerCorner srsDimension="3">458868.0 5438343.0 0.0 </gml:lowerCorner>
+                  <gml:upperCorner srsDimension="3">458878.0 5438351.0 9.0 </gml:upperCorner>
+            </gml:Envelope>
+      </gml:boundedBy>
+      <core:cityObjectMember>
+            <bldg:Building gml:id="GMLID_BUI171369_1075_5855">
+                  <!--  -->
+                  <!-- GML Attribute -->
+                  <!--  -->
+                  <gml:description>Beispiel für ein Haus mit generischen
+                        Attributen</gml:description>
+                  <gml:name>Haus mit generischen Attributen</gml:name>
+                  <!--  -->
+                  <!-- Generische Attribute -->
+                  <!--  -->
+                  <gen:stringAttribute name="Bauweise">
+                        <gen:value>Massivbau</gen:value>
+                  </gen:stringAttribute>
+                  <gen:intAttribute name="Anzahl der Eingänge">
+                        <gen:value>3</gen:value>
+                  </gen:intAttribute>
+                  <gen:doubleAttribute name="Grundflächenzahl GFZ">
+                        <gen:value>0.33</gen:value>
+                  </gen:doubleAttribute>
+                  <gen:dateAttribute name="Datum der Baufreigabe">
+                        <gen:value>2012-03-09</gen:value>
+                  </gen:dateAttribute>
+                  <gen:uriAttribute name="Web Seite">
+                        <gen:value>http://www.sig3d.org</gen:value>
+                  </gen:uriAttribute>
+                  <gen:measureAttribute name="Breite des Gebäudes">
+                        <gen:value uom="#m">20.75</gen:value>
+                  </gen:measureAttribute>
+                  <!--  -->
+                  <!-- Generisches Attribut Set -->
+                  <!--  -->
+                  <gen:genericAttributeSet name="Basismengen">
+                        <gen:measureAttribute name="Höhe">
+                              <gen:value uom="#m">9.00</gen:value>
+                        </gen:measureAttribute>
+                        <gen:measureAttribute name="Grundflächen">
+                              <gen:value uom="#m2">140.00</gen:value>
+                        </gen:measureAttribute>
+                        <gen:measureAttribute name="Volumen">
+                              <gen:value uom="#m3">1260.00</gen:value>
+                        </gen:measureAttribute>
+                  </gen:genericAttributeSet>
+                  <!--  -->
+                  <!-- Gebäude Geometrie -->
+                  <!--  -->
+                  <bldg:lod1Solid>
+                        <gml:Solid>
+                              <gml:exterior>
+                                    <gml:CompositeSurface>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61968_1153_845348_207650">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61968_1153_845348_207650_0">
+                                                  <gml:pos>458868 5438343 0 </gml:pos>
+                                                  <gml:pos>458868 5438351 0 </gml:pos>
+                                                  <gml:pos>458878 5438351 0 </gml:pos>
+                                                  <gml:pos>458878 5438343 0 </gml:pos>
+                                                  <gml:pos>458868 5438343 0 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61969_1576_120428_282910">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61969_1576_120428_282910_0">
+                                                  <gml:pos>458868 5438351 9 </gml:pos>
+                                                  <gml:pos>458868 5438343 9 </gml:pos>
+                                                  <gml:pos>458878 5438343 9 </gml:pos>
+                                                  <gml:pos>458878 5438351 9 </gml:pos>
+                                                  <gml:pos>458868 5438351 9 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61970_392_588358_191091">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61970_392_588358_191091_0">
+                                                  <gml:pos>458868 5438351 0 </gml:pos>
+                                                  <gml:pos>458868 5438343 0 </gml:pos>
+                                                  <gml:pos>458868 5438343 9 </gml:pos>
+                                                  <gml:pos>458868 5438351 9 </gml:pos>
+                                                  <gml:pos>458868 5438351 0 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61971_918_291240_333425">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61971_918_291240_333425_0">
+                                                  <gml:pos>458878 5438351 0 </gml:pos>
+                                                  <gml:pos>458868 5438351 0 </gml:pos>
+                                                  <gml:pos>458868 5438351 9 </gml:pos>
+                                                  <gml:pos>458878 5438351 9 </gml:pos>
+                                                  <gml:pos>458878 5438351 0 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61972_1422_487702_257315">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61972_1422_487702_257315_0">
+                                                  <gml:pos>458878 5438343 0 </gml:pos>
+                                                  <gml:pos>458878 5438351 0 </gml:pos>
+                                                  <gml:pos>458878 5438351 9 </gml:pos>
+                                                  <gml:pos>458878 5438343 9 </gml:pos>
+                                                  <gml:pos>458878 5438343 0 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                          <gml:surfaceMember>
+                                                <gml:Polygon gml:id="PolyID61973_261_715843_126489">
+                                                  <gml:exterior>
+                                                  <gml:LinearRing
+                                                  gml:id="PolyID61973_261_715843_126489_0">
+                                                  <gml:pos>458868 5438343 0 </gml:pos>
+                                                  <gml:pos>458878 5438343 0 </gml:pos>
+                                                  <gml:pos>458878 5438343 9 </gml:pos>
+                                                  <gml:pos>458868 5438343 9 </gml:pos>
+                                                  <gml:pos>458868 5438343 0 </gml:pos>
+                                                  </gml:LinearRing>
+                                                  </gml:exterior>
+                                                </gml:Polygon>
+                                          </gml:surfaceMember>
+                                    </gml:CompositeSurface>
+                              </gml:exterior>
+                        </gml:Solid>
+                  </bldg:lod1Solid>
+            </bldg:Building>
+      </core:cityObjectMember>
+</core:CityModel>

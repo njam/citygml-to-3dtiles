@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Written by 3D City Database Importer/Exporter, version "1.4-PRE-b1" -->
+<!-- IGG, Technical University Berlin, Germany, http://www.igg.tu-berlin.de/ -->
+<CityModel xmlns="http://www.opengis.net/citygml/1.0" xmlns:tran="http://www.opengis.net/citygml/transportation/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:wtr="http://www.opengis.net/citygml/waterbody/1.0" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:luse="http://www.opengis.net/citygml/landuse/1.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/1.0" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/1.0" xmlns:bldg="http://www.opengis.net/citygml/building/1.0" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:dem="http://www.opengis.net/citygml/relief/1.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/1.0" xmlns:gen="http://www.opengis.net/citygml/generics/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/citygml/landuse/1.0 http://schemas.opengis.net/citygml/landuse/1.0/landUse.xsd http://www.opengis.net/citygml/cityfurniture/1.0 http://schemas.opengis.net/citygml/cityfurniture/1.0/cityFurniture.xsd http://www.opengis.net/citygml/texturedsurface/1.0 http://schemas.opengis.net/citygml/texturedsurface/1.0/texturedSurface.xsd http://www.opengis.net/citygml/transportation/1.0 http://schemas.opengis.net/citygml/transportation/1.0/transportation.xsd http://www.opengis.net/citygml/building/1.0 http://schemas.opengis.net/citygml/building/1.0/building.xsd http://www.opengis.net/citygml/waterbody/1.0 http://schemas.opengis.net/citygml/waterbody/1.0/waterBody.xsd http://www.opengis.net/citygml/relief/1.0 http://schemas.opengis.net/citygml/relief/1.0/relief.xsd http://www.opengis.net/citygml/vegetation/1.0 http://schemas.opengis.net/citygml/vegetation/1.0/vegetation.xsd http://www.opengis.net/citygml/cityobjectgroup/1.0 http://schemas.opengis.net/citygml/cityobjectgroup/1.0/cityObjectGroup.xsd http://www.opengis.net/citygml/generics/1.0 http://schemas.opengis.net/citygml/generics/1.0/generics.xsd">
+  <cityObjectMember>
+    <bldg:Building gml:id="UUID_39ea5cbd-d1fb-4298-aa60-ea489dcc869d">
+      <gml:boundedBy>
+        <gml:Envelope srsName="CH1903" srsDimension="3">
+          <gml:lowerCorner>683303.518 247425.762 406.21621</gml:lowerCorner>
+          <gml:upperCorner>683306.765 247433.34 411.13031</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <creationDate>2012-06-15</creationDate>
+      <externalReference>
+        <informationSystem>GID</informationSystem>
+        <externalObject>
+          <name>z41ac39cc00001bb7</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>EGID</informationSystem>
+        <externalObject>
+          <name>302040712</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+        <externalObject>
+          <name>z41ac39cc00001bb7</name>
+        </externalObject>
+      </externalReference>
+      <gen:intAttribute name="Region">
+        <gen:value>8</gen:value>
+      </gen:intAttribute>
+      <gen:intAttribute name="QualitaetStatus">
+        <gen:value>1</gen:value>
+      </gen:intAttribute>
+      <bldg:class>BB07</bldg:class>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_c3ec0327-214a-4ff1-a8b8-59b82de5a12f">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683303.518 247425.762 406.21621</gml:lowerCorner>
+              <gml:upperCorner>683306.765 247433.34 411.13031</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z41ac39cc00001bb7-1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>1</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:GroundSurface gml:id="UUID_639a96e6-4e3d-48e7-a5e4-95d4e9944167">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683303.518 247425.762 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683306.765 247433.34 406.21621</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23235-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_7b3e18af-ce3f-439e-96e9-efcca1343ba6">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_ef41f9d3-0b18-4bf8-9aa1-f93bb6391bc2">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_ef41f9d3-0b18-4bf8-9aa1-f93bb6391bc2_0_">
+                          <gml:posList srsDimension="3">683305.953 247425.762 406.21621 683304.282 247425.962 406.21621 683303.518 247426.048 406.21621 683303.862 247433.34 406.21621 683304.015 247433.338 406.21621 683306.765 247433.147 406.21621 683305.969 247425.908 406.21621 683305.953 247425.762 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:GroundSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_4c194a04-489e-4acc-858a-4371ea950cdb">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683305.953 247425.762 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683305.969 247425.908 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23236-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_0022d6ad-8acb-495f-9bdf-04bec9e42fbf">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_7086ce42-4a0c-4175-8d09-8077d51ae1b1">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_7086ce42-4a0c-4175-8d09-8077d51ae1b1_0_">
+                          <gml:posList srsDimension="3">683305.969 247425.908 406.21621 683305.969 247425.908 411.13031 683305.953 247425.762 411.13031 683305.953 247425.762 406.21621 683305.969 247425.908 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_6bbce5a7-42b8-4d8d-bb2c-379048ea0e09">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683305.969 247425.908 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683306.765 247433.147 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23237-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_0db29b2e-787b-466c-bf79-81f7897a99ee">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_80458c7b-18e8-4217-9d8c-17def53fe50f">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_80458c7b-18e8-4217-9d8c-17def53fe50f_0_">
+                          <gml:posList srsDimension="3">683306.765 247433.147 406.21621 683306.765 247433.147 411.13031 683305.969 247425.908 411.13031 683305.969 247425.908 406.21621 683306.765 247433.147 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_0d80c4c1-a3d0-47bf-a26b-fd214517f7d4">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683304.015 247433.147 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683306.765 247433.338 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23238-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_d161ce50-6e2c-4006-a5c3-9b1b07e0a1af">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_36e58a12-9de3-48da-9276-74e7a07803d7">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_36e58a12-9de3-48da-9276-74e7a07803d7_0_">
+                          <gml:posList srsDimension="3">683304.015 247433.338 406.21621 683304.015 247433.338 411.13031 683306.765 247433.147 411.13031 683306.765 247433.147 406.21621 683304.015 247433.338 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_85986c6c-2382-40f1-b7da-f59dd3001c89">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683303.862 247433.338 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683304.015 247433.34 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23239-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_d62b57b0-2481-45ec-b0ba-7cd14a5f0792">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_84273da8-3159-42c3-9860-83fbed7eca65">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_84273da8-3159-42c3-9860-83fbed7eca65_0_">
+                          <gml:posList srsDimension="3">683303.862 247433.34 406.21621 683303.862 247433.34 411.13031 683304.015 247433.338 411.13031 683304.015 247433.338 406.21621 683303.862 247433.34 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_5ce34fb7-b526-4098-b8dc-c7ce78575aea">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683304.282 247425.762 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683305.953 247425.962 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23240-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_f1bdc381-22a4-4fa3-84fd-95755fcf0197">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_f51f4a66-0e7f-47ed-ae1d-0bd989957e41">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_f51f4a66-0e7f-47ed-ae1d-0bd989957e41_0_">
+                          <gml:posList srsDimension="3">683305.953 247425.762 406.21621 683305.953 247425.762 411.13031 683304.282 247425.962 411.13031 683304.282 247425.962 406.21621 683305.953 247425.762 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_d7ac06cd-dfe9-4d2f-a8aa-b1e2d6f2c2b4">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683303.518 247425.962 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683304.282 247426.048 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23241-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_b7ffd567-6b69-4a3b-b240-841174821145">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_04cabd73-d1f4-413f-80fe-eb8d65ecc309">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_04cabd73-d1f4-413f-80fe-eb8d65ecc309_0_">
+                          <gml:posList srsDimension="3">683304.282 247425.962 406.21621 683304.282 247425.962 411.13031 683303.518 247426.048 411.13031 683303.518 247426.048 406.21621 683304.282 247425.962 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_e3462526-c2e2-429e-aaf5-eb85e3f544a2">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683303.518 247426.048 406.21621</gml:lowerCorner>
+                  <gml:upperCorner>683303.862 247433.34 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23242-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_f3faeb59-edb7-4b3b-9eae-cf324d262583">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_162d41c6-e916-4eb1-b9da-f2c5336f7fa7">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_162d41c6-e916-4eb1-b9da-f2c5336f7fa7_0_">
+                          <gml:posList srsDimension="3">683303.518 247426.048 406.21621 683303.518 247426.048 411.13031 683303.862 247433.34 411.13031 683303.862 247433.34 406.21621 683303.518 247426.048 406.21621</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_8bb88608-b49c-4c2a-a96c-493d376df695">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683303.518 247425.762 411.13031</gml:lowerCorner>
+                  <gml:upperCorner>683306.765 247433.34 411.13031</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23243-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_799dd211-ed22-4fdc-b342-008ad1dc85d7">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_61050e8c-7539-43e7-951b-932cdf3a2aa2">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_61050e8c-7539-43e7-951b-932cdf3a2aa2_0_">
+                          <gml:posList srsDimension="3">683305.953 247425.762 411.13031 683305.969 247425.908 411.13031 683306.765 247433.147 411.13031 683304.015 247433.338 411.13031 683303.862 247433.34 411.13031 683303.518 247426.048 411.13031 683304.282 247425.962 411.13031 683305.953 247425.762 411.13031</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+    </bldg:Building>
+  </cityObjectMember>
+  <cityObjectMember>
+    <bldg:Building gml:id="UUID_a3961a21-8294-4a79-9ce7-ffb0f1a4b2a3">
+      <gml:boundedBy>
+        <gml:Envelope srsName="CH1903" srsDimension="3">
+          <gml:lowerCorner>683311.541 247470.3478 403.19936</gml:lowerCorner>
+          <gml:upperCorner>683320.06512 247492.04352 414.50806</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <creationDate>2012-06-15</creationDate>
+      <externalReference>
+        <informationSystem>GID</informationSystem>
+        <externalObject>
+          <name>z45b11a6a00002f9e</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>EGID</informationSystem>
+        <externalObject>
+          <name>2372759</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+        <externalObject>
+          <name>z45b11a6a00002f9e</name>
+        </externalObject>
+      </externalReference>
+      <gen:intAttribute name="Region">
+        <gen:value>8</gen:value>
+      </gen:intAttribute>
+      <gen:intAttribute name="QualitaetStatus">
+        <gen:value>1</gen:value>
+      </gen:intAttribute>
+      <bldg:class>BB00</bldg:class>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_caefdc15-e488-43f2-b3ac-5392b8f8324c">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683311.541 247470.3478 403.19936</gml:lowerCorner>
+              <gml:upperCorner>683320.06512 247492.04352 413.37223</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z45b11a6a00002f9e-1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>1</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:GroundSurface gml:id="UUID_f8624100-0e41-4f31-b52e-92aedbec2a20">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683311.541 247470.612 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683319.712 247492.04 403.19936</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21990-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_6a098fa3-fb1e-4ab7-8eb6-8c73b181a11f">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_22ab2b5a-9533-42f1-86cd-6b1551ab7a70">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_22ab2b5a-9533-42f1-86cd-6b1551ab7a70_0_">
+                          <gml:posList srsDimension="3">683313.071 247470.612 403.19936 683311.546 247491.717 403.19936 683311.541 247491.92398 403.19936 683315.64636 247491.98378 403.19936 683319.507 247492.04 403.19936 683319.442 247485.251 403.19936 683319.712 247470.806 403.19936 683317.665 247470.751 403.19936 683316.34203 247470.71561 403.19936 683313.515 247470.64 403.19936 683313.071 247470.612 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:GroundSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_b9d132f4-2ef2-4eff-9eb8-9a480c0c1cf0">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683315.64636 247491.98378 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683319.507 247492.04 413.37223</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21991-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_9651f6a6-c6bd-4296-bba9-ce8a5c62df7c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_2169f88a-c8e6-4977-9985-224c31363cac">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_2169f88a-c8e6-4977-9985-224c31363cac_0_">
+                          <gml:posList srsDimension="3">683319.507 247492.04 403.19936 683315.64636 247491.98378 403.19936 683315.64636 247491.98378 413.37223 683319.507 247492.04 411.85373 683319.507 247492.04 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_07894661-f689-4507-ae86-469c0e43d253">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683311.541 247491.92398 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683315.64636 247491.98378 413.37223</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21992-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_ed136d9e-0077-4d74-9e17-065bc482a11b">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_546ac505-8b4d-4ea2-aa7a-96d92c299432">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_546ac505-8b4d-4ea2-aa7a-96d92c299432_0_">
+                          <gml:posList srsDimension="3">683315.64636 247491.98378 403.19936 683311.541 247491.92398 403.19936 683311.541 247491.924 411.75873 683315.64636 247491.98378 413.37223 683315.64636 247491.98378 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_c273cb87-94a2-4b5d-a6e3-96649d5a85fa">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683311.541 247491.717 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683311.546 247491.924 411.75873</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21993-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_6a4757b6-a1f1-48f3-bc07-e2f48e61d32c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_787740f8-7fcd-41a1-8e0f-cd5804e058f8">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_787740f8-7fcd-41a1-8e0f-cd5804e058f8_0_">
+                          <gml:posList srsDimension="3">683311.541 247491.92398 403.19936 683311.546 247491.717 403.19936 683311.546 247491.717 411.75657 683311.541 247491.924 411.75873 683311.541 247491.92398 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_044c3533-105d-4e42-8955-eb7fd4c57830">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683311.546 247470.612 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683313.071 247491.717 411.93513</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21994-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_88cbbeab-cc47-4e9d-8b16-b68ab6e51a4a">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_fe8f2057-dea6-4bb3-bdf1-c38416924ec4">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_fe8f2057-dea6-4bb3-bdf1-c38416924ec4_0_">
+                          <gml:posList srsDimension="3">683311.546 247491.717 403.19936 683313.071 247470.612 403.19936 683313.071 247470.612 411.93513 683311.546 247491.717 411.75657 683311.546 247491.717 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_4300261e-e112-4441-bdeb-c6345d91ba34">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.071 247470.612 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683313.515 247470.64 412.11006</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21995-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_9dab0ace-28f9-4251-b652-ef0490f9c1c6">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_eaf6bd94-65a8-4c4b-b2c7-9aa7f676af22">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_eaf6bd94-65a8-4c4b-b2c7-9aa7f676af22_0_">
+                          <gml:posList srsDimension="3">683313.071 247470.612 403.19936 683313.515 247470.64 403.19936 683313.515 247470.64 412.11006 683313.071 247470.612 411.93513 683313.071 247470.612 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_d9334e20-866e-455c-9c7b-845331525d77">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.515 247470.64 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683316.34203 247470.71561 413.22184</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21996-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_25213e26-bcbb-4de8-91f8-acffe6cd8e07">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_98273d2e-c2c2-46fc-a28c-44d3b2a682e1">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_98273d2e-c2c2-46fc-a28c-44d3b2a682e1_0_">
+                          <gml:posList srsDimension="3">683313.515 247470.64 403.19936 683316.34203 247470.71561 403.19936 683316.34203 247470.71561 413.22184 683313.515 247470.64 412.11006 683313.515 247470.64 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_6763f037-0c1f-4e77-bfae-7b767e703f5a">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683316.34203 247470.71561 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683317.665 247470.751 413.22184</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21997-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_878001b4-71be-448c-aff7-d68f41bd92a4">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_0eb4fc7e-bd28-4b6c-99d3-5a42f0fd2ae3">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_0eb4fc7e-bd28-4b6c-99d3-5a42f0fd2ae3_0_">
+                          <gml:posList srsDimension="3">683316.34203 247470.71561 403.19936 683317.665 247470.751 403.19936 683317.665 247470.751 412.70138 683316.34203 247470.71561 413.22184 683316.34203 247470.71561 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_88705c94-9713-4b55-bb21-425bfa7d35c4">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683317.665 247470.751 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683319.712 247470.806 412.70138</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21998-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_dbe0b76f-4d6a-4732-bd30-7ba4abb75f8c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_c31863ab-6aa1-4161-9f0c-07bef6a5d20b">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_c31863ab-6aa1-4161-9f0c-07bef6a5d20b_0_">
+                          <gml:posList srsDimension="3">683317.665 247470.751 403.19936 683319.712 247470.806 403.19936 683319.712 247470.806 411.89609 683317.665 247470.751 412.70138 683317.665 247470.751 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_92f39cf0-31e0-4531-9d56-2befa39906e6">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683319.442 247470.806 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683319.712 247485.251 411.91861</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21999-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_c12d6b63-9bb4-4609-b58c-7a880af6afd1">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_55a0dacc-e62e-4f70-b663-fb8ec02d3242">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_55a0dacc-e62e-4f70-b663-fb8ec02d3242_0_">
+                          <gml:posList srsDimension="3">683319.712 247470.806 403.19936 683319.442 247485.251 403.19936 683319.442 247485.251 411.91861 683319.712 247470.806 411.89609 683319.712 247470.806 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_b7e3d753-0fe1-4992-b9a9-82d965b48e13">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683319.442 247485.251 403.19936</gml:lowerCorner>
+                  <gml:upperCorner>683319.507 247492.04 411.91861</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22000-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_9e118fa5-b492-41ad-a2d9-a70dd288123e">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_47759779-edc3-4bff-b2eb-91bc81543235">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_47759779-edc3-4bff-b2eb-91bc81543235_0_">
+                          <gml:posList srsDimension="3">683319.442 247485.251 403.19936 683319.507 247492.04 403.19936 683319.507 247492.04 411.85373 683319.442 247485.251 411.91861 683319.442 247485.251 403.19936</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_f182c967-ce19-492f-aaf1-78c102502b70">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683311.541 247470.3478 411.75657</gml:lowerCorner>
+                  <gml:upperCorner>683316.3508 247491.98378 413.37223</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22001-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_ca354c90-6c0b-4c8c-bf0c-6bf6ab35a132">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_b656dd82-54d3-4636-8713-00ab1ebf9c7b">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_b656dd82-54d3-4636-8713-00ab1ebf9c7b_0_">
+                          <gml:posList srsDimension="3">683311.546 247491.717 411.75657 683312.63026 247470.3478 411.75873 683316.3508 247470.44747 413.21994 683315.64636 247491.98378 413.37223 683311.541 247491.924 411.75873 683311.546 247491.717 411.75657</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_f21fb596-c5e3-4113-b9ae-4221d4670505">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683315.64636 247470.44747 411.75873</gml:lowerCorner>
+                  <gml:upperCorner>683320.06512 247492.04352 413.37223</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22002-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_91bfbb8c-ce0d-4fe0-9d65-a8f94130bfd2">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_1d24846b-198b-4779-b064-e6820730c7c5">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_1d24846b-198b-4779-b064-e6820730c7c5_0_">
+                          <gml:posList srsDimension="3">683319.507 247492.04 411.85373 683315.64636 247491.98378 413.37223 683316.3508 247470.44747 413.21994 683320.06512 247470.54696 411.75873 683319.74854 247492.04352 411.75873 683319.507 247492.04 411.85373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_86be556a-0655-438b-ba8f-aacf2e023586">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683313.30045 247476.31581 412.14731</gml:lowerCorner>
+              <gml:upperCorner>683313.84973 247476.79854 414.50806</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z45b11a6a00002f9e-2_1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>2</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_56161b92-3807-46cd-a7ee-1e0c28b2512b">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.30045 247476.74088 412.14731</gml:lowerCorner>
+                  <gml:upperCorner>683313.80073 247476.79854 414.50806</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22003-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_05e78f3a-b434-48ee-b10d-39dfd0991cba">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_ae838f1d-e4cb-46ea-8284-cce2872f62b6">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_ae838f1d-e4cb-46ea-8284-cce2872f62b6_0_">
+                          <gml:posList srsDimension="3">683313.30045 247476.74088 412.14731 683313.30045 247476.74088 414.50806 683313.80073 247476.79854 414.50806 683313.80073 247476.79854 412.34494 683313.30045 247476.74088 412.14731</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_87fc7271-7cd5-4c37-ae58-fcaf87102cdb">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.30045 247476.31581 412.14731</gml:lowerCorner>
+                  <gml:upperCorner>683313.34944 247476.74088 414.50806</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22004-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_93e5b2b3-89fa-4085-a9e8-8b8fc95aadd0">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_822df14b-a2e6-41f0-b954-8f14cfec722f">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_822df14b-a2e6-41f0-b954-8f14cfec722f_0_">
+                          <gml:posList srsDimension="3">683313.30045 247476.74088 412.14731 683313.34944 247476.31581 412.15809 683313.34944 247476.31581 414.50806 683313.30045 247476.74088 414.50806 683313.30045 247476.74088 412.14731</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_97ef2ace-b3bc-4601-badd-0f338e9a472d">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.34944 247476.31581 412.15809</gml:lowerCorner>
+                  <gml:upperCorner>683313.84973 247476.37347 414.50806</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22005-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_cb5ef882-426b-4c15-94c5-ae1537b83617">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_445a5f5e-65d6-4e93-aae8-a8151a6e0474">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_445a5f5e-65d6-4e93-aae8-a8151a6e0474_0_">
+                          <gml:posList srsDimension="3">683313.34944 247476.31581 412.15809 683313.84973 247476.37347 412.35572 683313.84973 247476.37347 414.50806 683313.34944 247476.31581 414.50806 683313.34944 247476.31581 412.15809</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_da7e2562-bda1-43f3-9818-07f0f09c4c15">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.80073 247476.37347 412.34494</gml:lowerCorner>
+                  <gml:upperCorner>683313.84973 247476.79854 414.50806</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22006-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_7cc47fa6-67f1-472f-855b-44eed0aeabc8">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_22381d06-9b51-4ad3-89ed-fbdda2a9e68d">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_22381d06-9b51-4ad3-89ed-fbdda2a9e68d_0_">
+                          <gml:posList srsDimension="3">683313.80073 247476.79854 412.34494 683313.80073 247476.79854 414.50806 683313.84973 247476.37347 414.50806 683313.84973 247476.37347 412.35572 683313.80073 247476.79854 412.34494</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_0bef1e6d-f902-4a2e-b6eb-15be58559af6">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683313.30045 247476.31581 414.50806</gml:lowerCorner>
+                  <gml:upperCorner>683313.84973 247476.79854 414.50806</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo22007-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_a5777082-023b-477a-b1c4-82939a1e1596">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_bb0fe053-9c62-4bac-b18a-46488e0f6639">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_bb0fe053-9c62-4bac-b18a-46488e0f6639_0_">
+                          <gml:posList srsDimension="3">683313.34944 247476.31581 414.50806 683313.84973 247476.37347 414.50806 683313.80073 247476.79854 414.50806 683313.30045 247476.74088 414.50806 683313.34944 247476.31581 414.50806</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+    </bldg:Building>
+  </cityObjectMember>
+  <cityObjectMember>
+    <bldg:Building gml:id="UUID_bc87802f-bc1f-4d3b-81a6-45608c20146b">
+      <gml:boundedBy>
+        <gml:Envelope srsName="CH1903" srsDimension="3">
+          <gml:lowerCorner>683283.03804 247486.47076 421.15373</gml:lowerCorner>
+          <gml:upperCorner>683286.08932 247489.7235 432.65393</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <creationDate>2012-06-15</creationDate>
+      <externalReference>
+        <informationSystem>GID</informationSystem>
+        <externalObject>
+          <name>z41ac39cc00001a71</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>EGID</informationSystem>
+        <externalObject>
+          <name>302040570</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+        <externalObject>
+          <name>z41ac39cc00001a71</name>
+        </externalObject>
+      </externalReference>
+      <gen:intAttribute name="Region">
+        <gen:value>8</gen:value>
+      </gen:intAttribute>
+      <gen:intAttribute name="QualitaetStatus">
+        <gen:value>1</gen:value>
+      </gen:intAttribute>
+      <bldg:class>BB00</bldg:class>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_c64a43f7-26a5-469e-a2ae-b14a5dce5cc1">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683283.03804 247486.47076 421.15373</gml:lowerCorner>
+              <gml:upperCorner>683286.08932 247489.7235 432.65393</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z41ac39cc00001a71-1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>1</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:GroundSurface gml:id="UUID_2d71d0d6-0b7f-4a7c-af55-dcf0446d6997">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.198 247486.68782 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.954 247489.505 421.15373</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23083-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_53fc2e42-acc4-44cc-bd10-92dfc8950eef">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_15810f03-697c-4413-97d6-9577bfcf364c">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_15810f03-697c-4413-97d6-9577bfcf364c_0_">
+                          <gml:posList srsDimension="3">683284.79735 247486.68782 421.15373 683283.55724 247487.1789 421.15373 683283.408 247487.238 421.15373 683283.20168 247488.59383 421.15373 683283.198 247488.618 421.15373 683284.431 247489.505 421.15373 683284.45374 247489.49472 421.15373 683285.048 247489.226 421.15373 683285.757 247488.966 421.15373 683285.78079 247488.79837 421.15373 683285.954 247487.578 421.15373 683285.8398 247487.49491 421.15373 683285.374 247487.156 421.15373 683284.79735 247486.68782 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:GroundSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_3e2cde9b-994d-45c8-8baa-19a22824b472">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683285.78079 247487.578 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.954 247488.79837 431.69838</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23084-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_0011e451-d7e7-4285-8898-d24387d3d6e3">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_a297d4a8-2fb6-4239-8a72-f9633986926b">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_a297d4a8-2fb6-4239-8a72-f9633986926b_0_">
+                          <gml:posList srsDimension="3">683285.954 247487.578 421.15373 683285.78079 247488.79837 421.15373 683285.78079 247488.79837 431.69838 683285.954 247487.578 431.62722 683285.954 247487.578 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_952c3e9f-93e5-41a5-83ea-3d37ad223b15">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683285.757 247488.79837 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.78079 247488.966 431.69838</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23085-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_0353f19b-1a5e-4e41-b253-d6af5c8d4ee8">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_606c9196-c785-4611-b0c4-25e3c95b4c1f">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_606c9196-c785-4611-b0c4-25e3c95b4c1f_0_">
+                          <gml:posList srsDimension="3">683285.78079 247488.79837 421.15373 683285.757 247488.966 421.15373 683285.757 247488.966 431.59043 683285.78079 247488.79837 431.69838 683285.78079 247488.79837 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_15fc4e57-54b3-455f-8f62-6045930345c7">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683285.048 247488.966 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.757 247489.226 431.65733</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23086-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_dd000372-1983-4562-8490-5a03fad19580">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_191df8dc-f367-486a-b8b2-7793081b486d">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_191df8dc-f367-486a-b8b2-7793081b486d_0_">
+                          <gml:posList srsDimension="3">683285.757 247488.966 421.15373 683285.048 247489.226 421.15373 683285.048 247489.226 431.65733 683285.757 247488.966 431.59043 683285.757 247488.966 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_ce8b4ef4-26fe-4dc3-acca-02495f801367">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.45374 247489.226 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.048 247489.49472 431.67818</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23087-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_6cb4fcfa-1562-40a7-af5e-14acd69ca147">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_9449a7e5-4380-4301-a70f-012ca74c571d">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_9449a7e5-4380-4301-a70f-012ca74c571d_0_">
+                          <gml:posList srsDimension="3">683285.048 247489.226 421.15373 683284.45374 247489.49472 421.15373 683284.45374 247489.49472 431.67818 683285.048 247489.226 431.65733 683285.048 247489.226 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_e491c3c1-3eda-450c-860d-915709d38418">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.431 247489.49472 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683284.45374 247489.505 431.67818</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23088-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_96bc0b9b-d1ef-4aa0-858f-da4f1d4bb5a2">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_fbce21de-d24b-45ab-a920-98d6f5670058">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_fbce21de-d24b-45ab-a920-98d6f5670058_0_">
+                          <gml:posList srsDimension="3">683284.45374 247489.49472 421.15373 683284.431 247489.505 421.15373 683284.431 247489.505 431.66175 683284.45374 247489.49472 431.67818 683284.45374 247489.49472 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_da847a3a-2239-44c1-a8c6-fc55e4282bd8">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.198 247488.618 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683284.431 247489.505 431.66175</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23089-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_59a8a91e-0fb3-4ede-8dd4-e5f6cc24022c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_0b4e2e76-8e21-4196-aa9e-0ec1bbbc2c07">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_0b4e2e76-8e21-4196-aa9e-0ec1bbbc2c07_0_">
+                          <gml:posList srsDimension="3">683284.431 247489.505 421.15373 683283.198 247488.618 421.15373 683283.198 247488.618 431.62826 683284.431 247489.505 431.66175 683284.431 247489.505 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_3761bb9c-51f6-4ab9-990c-baff7ceae7e1">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.198 247488.59383 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683283.20168 247488.618 431.64429</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23090-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_24524a1e-5eb3-41d6-b9e6-b17c952af6f9">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_ad58ba24-ab87-46da-9b4a-4bdb81febb82">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_ad58ba24-ab87-46da-9b4a-4bdb81febb82_0_">
+                          <gml:posList srsDimension="3">683283.198 247488.618 421.15373 683283.20168 247488.59383 421.15373 683283.20168 247488.59383 431.64429 683283.198 247488.618 431.62826 683283.198 247488.618 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_8a660125-d925-4412-bc73-813164da2db2">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.20168 247487.238 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683283.408 247488.59383 431.64429</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23091-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_be7ac11d-8f9e-4eab-9beb-8f0b5a6131bf">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_ae6359e2-cfd9-46cf-abb0-bc7ecbd775b3">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_ae6359e2-cfd9-46cf-abb0-bc7ecbd775b3_0_">
+                          <gml:posList srsDimension="3">683283.20168 247488.59383 421.15373 683283.408 247487.238 421.15373 683283.408 247487.238 431.60352 683283.20168 247488.59383 431.64429 683283.20168 247488.59383 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_4ad46cbe-dc10-48dc-b9d3-a381de0b20ce">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.408 247487.1789 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683283.55724 247487.238 431.70874</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23092-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_2d725bf6-80b0-485a-b501-dfe02138211d">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_4428b122-47f1-46e5-8df8-87b9f42743ef">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_4428b122-47f1-46e5-8df8-87b9f42743ef_0_">
+                          <gml:posList srsDimension="3">683283.408 247487.238 421.15373 683283.55724 247487.1789 421.15373 683283.55724 247487.1789 431.70874 683283.408 247487.238 431.60352 683283.408 247487.238 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_d2578da6-61e5-491e-9950-8ba8fef2de9c">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.55724 247486.68782 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683284.79735 247487.1789 431.70874</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23093-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_4c086a81-6439-4384-81ba-07ded6cc5778">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_261533c7-0376-4bdc-88ef-b0925674cb8c">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_261533c7-0376-4bdc-88ef-b0925674cb8c_0_">
+                          <gml:posList srsDimension="3">683283.55724 247487.1789 421.15373 683284.79735 247486.68782 421.15373 683284.79735 247486.68782 431.68965 683283.55724 247487.1789 431.70874 683283.55724 247487.1789 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_5bcaa296-a331-49ea-99bf-6eed26f77901">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.79735 247486.68782 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.374 247487.156 431.72285</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23094-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_9835e00f-52ad-48c7-821b-96de4a525bc2">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_783936b4-09b3-44ed-b0c4-e7245af4f154">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_783936b4-09b3-44ed-b0c4-e7245af4f154_0_">
+                          <gml:posList srsDimension="3">683284.79735 247486.68782 421.15373 683285.374 247487.156 421.15373 683285.374 247487.156 431.72285 683284.79735 247486.68782 431.68965 683284.79735 247486.68782 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_8bf2b06d-985c-44dc-a912-4f2741ea283c">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683285.374 247487.156 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.8398 247487.49491 431.72302</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23095-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_2947465b-5396-4498-b54a-4dd4c6bac764">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_f751c345-e18d-4314-9287-f422f1c9bc15">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_f751c345-e18d-4314-9287-f422f1c9bc15_0_">
+                          <gml:posList srsDimension="3">683285.374 247487.156 421.15373 683285.8398 247487.49491 421.15373 683285.8398 247487.49491 431.72302 683285.374 247487.156 431.72285 683285.374 247487.156 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_98eb876d-d4d5-41dc-a4f8-b193425c5a23">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683285.8398 247487.49491 421.15373</gml:lowerCorner>
+                  <gml:upperCorner>683285.954 247487.578 431.72302</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23096-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_0b524b22-78b9-447c-b822-f99f0214d28c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_b4fccdb7-05ea-4afb-b00c-975f476a90f1">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_b4fccdb7-05ea-4afb-b00c-975f476a90f1_0_">
+                          <gml:posList srsDimension="3">683285.8398 247487.49491 421.15373 683285.954 247487.578 421.15373 683285.954 247487.578 431.62722 683285.8398 247487.49491 431.72302 683285.8398 247487.49491 421.15373</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_14fba8c0-676f-4d61-a920-bd30508cd56e">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.63997 247487.39109 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683286.08932 247488.94058 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23097-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_d4ed4e3b-7fcb-4235-a4dd-b04e3ff6c5f8">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_891aec33-28b3-4151-9a7b-c3b3e72fe351">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_891aec33-28b3-4151-9a7b-c3b3e72fe351_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683286.08932 247487.39109 431.52942 683285.98252 247488.94058 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_717ffdf7-222f-42ed-9341-1fc64c8e6003">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.63997 247486.47076 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683286.08932 247487.99411 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23098-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_8251e076-d8ac-460c-ba76-6f4aa7a29e3b">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_6e5ee48e-0c01-4f26-967e-73afb3fac308">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_6e5ee48e-0c01-4f26-967e-73afb3fac308_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683284.8235 247486.47076 431.52942 683286.08932 247487.39109 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_55d7260c-ea3d-44c4-ad0f-ede3b1568450">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.35183 247486.47076 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683284.8235 247487.99411 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23099-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_78aaa1e8-5139-48fd-b503-34924ced12e0">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_5555abca-d910-4de8-a384-7e3c0de3396d">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_5555abca-d910-4de8-a384-7e3c0de3396d_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683283.35183 247487.02424 431.52942 683284.8235 247486.47076 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_7273a9cf-ef93-42f4-af19-6577197057c7">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.03804 247487.02424 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683284.63997 247488.66206 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23100-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_ff7bbf6f-d9fa-4f6c-8bdf-dccdc00e4f02">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_6608e1b2-ff26-4d0e-a908-f9691ab3d9ea">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_6608e1b2-ff26-4d0e-a908-f9691ab3d9ea_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683283.03804 247488.66206 431.52942 683283.35183 247487.02424 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_69fbef11-2303-4b0e-9934-a31af429dbd1">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.03804 247487.99411 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683284.63997 247489.7235 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23101-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_5813bb14-5c6c-48da-8e8d-12675381c51d">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_98e53efe-0783-49da-bf0f-a7e138bfd7d8">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_98e53efe-0783-49da-bf0f-a7e138bfd7d8_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683284.42534 247489.7235 431.52942 683283.03804 247488.66206 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_fdee13e5-a56f-4f25-b49e-acd49e26386b">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683284.42534 247487.99411 431.52942</gml:lowerCorner>
+                  <gml:upperCorner>683285.98252 247489.7235 432.65393</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo23102-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_202fc38c-a630-463b-a52b-f0287052847f">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_36e8f16e-f504-4baf-8878-05c8f22c243a">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_36e8f16e-f504-4baf-8878-05c8f22c243a_0_">
+                          <gml:posList srsDimension="3">683284.63997 247487.99411 432.65393 683285.98252 247488.94058 431.52942 683284.42534 247489.7235 431.52942 683284.63997 247487.99411 432.65393</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+    </bldg:Building>
+  </cityObjectMember>
+  <cityObjectMember>
+    <bldg:Building gml:id="UUID_58b8cd97-b9ec-415c-9d38-fc3f776a249e">
+      <gml:boundedBy>
+        <gml:Envelope srsName="CH1903" srsDimension="3">
+          <gml:lowerCorner>683270.91321 247427.88273 413.00099</gml:lowerCorner>
+          <gml:upperCorner>683283.51794 247439.9582 430.92548</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <creationDate>2012-06-15</creationDate>
+      <externalReference>
+        <informationSystem>GID</informationSystem>
+        <externalObject>
+          <name>z46f29566000001f7</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>EGID</informationSystem>
+        <externalObject>
+          <name>140715</name>
+        </externalObject>
+      </externalReference>
+      <externalReference>
+        <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+        <externalObject>
+          <name>z46f29566000001f7</name>
+        </externalObject>
+      </externalReference>
+      <gen:intAttribute name="Region">
+        <gen:value>8</gen:value>
+      </gen:intAttribute>
+      <gen:intAttribute name="QualitaetStatus">
+        <gen:value>1</gen:value>
+      </gen:intAttribute>
+      <bldg:class>BB01</bldg:class>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_5c382ac1-039f-4921-8e43-0ed43f5f75ec">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683270.91321 247427.88273 413.00099</gml:lowerCorner>
+              <gml:upperCorner>683283.51794 247439.9582 423.69867</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z46f29566000001f7-1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>1</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:GroundSurface gml:id="UUID_a682ee1c-ec58-4652-9c64-8cb62923a2e6">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683271.057 247428.308 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683283.201 247439.378 413.00099</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21327-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_60d8c96c-0610-4666-b2fc-e003d3ec1ac3">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_70ae93c6-bb96-495a-bd42-49a96c0554e4">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_70ae93c6-bb96-495a-bd42-49a96c0554e4_0_">
+                          <gml:posList srsDimension="3">683272.953 247428.308 413.00099 683272.785 247436.996 413.00099 683272.417 247437.391 413.00099 683271.057 247439.12 413.00099 683272.787 247439.157 413.00099 683283.104 247439.378 413.00099 683283.201 247431.853 413.00099 683272.953 247428.308 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:GroundSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_24a710ff-adc4-4d1b-9589-b795084cf1db">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683283.104 247431.853 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683283.201 247439.378 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21328-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_62a3a9cc-038c-469e-b1e1-3fd2eac8cf72">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_088fabb9-fd98-4e89-876b-d8302cfac4d4">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_088fabb9-fd98-4e89-876b-d8302cfac4d4_0_">
+                          <gml:posList srsDimension="3">683283.201 247431.853 413.00099 683283.104 247439.378 413.00099 683283.104 247439.378 423.69867 683283.201 247431.853 423.69867 683283.201 247431.853 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_c92a4606-9bf0-44dc-9fb0-d0094c06c373">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683272.787 247439.157 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683283.104 247439.378 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21329-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_27ab4d1f-b964-4025-b409-bdbe70758c29">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_98e4f7ca-9cf6-473e-ad12-8e2e0a497b8b">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_98e4f7ca-9cf6-473e-ad12-8e2e0a497b8b_0_">
+                          <gml:posList srsDimension="3">683283.104 247439.378 413.00099 683272.787 247439.157 413.00099 683272.787 247439.157 423.69867 683283.104 247439.378 423.69867 683283.104 247439.378 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_51ee8878-cd4a-4434-b006-c034d5390e42">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683271.057 247439.12 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683272.787 247439.157 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21330-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_904cd4df-0865-4c35-83a5-e81c1e9a5d7c">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_c601f99d-3a30-4f5b-b12b-078ed44c6a12">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_c601f99d-3a30-4f5b-b12b-078ed44c6a12_0_">
+                          <gml:posList srsDimension="3">683272.787 247439.157 413.00099 683271.057 247439.12 413.00099 683271.057 247439.12 423.69867 683272.787 247439.157 423.69867 683272.787 247439.157 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_d5fb9d14-9b47-4f17-b63e-561e91a136c9">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683271.057 247437.391 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683272.417 247439.12 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21331-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_c39896ec-dcf3-4b20-9a19-8a3be0039985">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_59b21872-5cd5-4f8b-ac99-c38be6fa5428">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_59b21872-5cd5-4f8b-ac99-c38be6fa5428_0_">
+                          <gml:posList srsDimension="3">683271.057 247439.12 413.00099 683272.417 247437.391 413.00099 683272.417 247437.391 423.69867 683271.057 247439.12 423.69867 683271.057 247439.12 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_4b5b385d-c3ce-46e3-9ba5-e3cd5d0e1101">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683272.417 247436.996 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683272.785 247437.391 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21332-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_4e50121d-5dab-44f6-b708-60a0f28daf81">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_d380b095-4f0b-4aac-8c37-d27b9b163d79">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_d380b095-4f0b-4aac-8c37-d27b9b163d79_0_">
+                          <gml:posList srsDimension="3">683272.417 247437.391 413.00099 683272.785 247436.996 413.00099 683272.785 247436.996 423.69867 683272.417 247437.391 423.69867 683272.417 247437.391 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_e6cb7814-00da-4721-bba5-f54f076c8dc2">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683272.785 247428.308 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683272.953 247436.996 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21333-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_a215ee0d-73a6-4af1-8838-1927fccd254d">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_06ab8e5f-6839-4825-8a07-234d29af07df">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_06ab8e5f-6839-4825-8a07-234d29af07df_0_">
+                          <gml:posList srsDimension="3">683272.785 247436.996 413.00099 683272.953 247428.308 413.00099 683272.953 247428.308 423.69867 683272.785 247436.996 423.69867 683272.785 247436.996 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_d2264625-725d-4df1-8884-69248f54dd68">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683272.953 247428.308 413.00099</gml:lowerCorner>
+                  <gml:upperCorner>683283.201 247431.853 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21334-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_a5af1829-0f48-4a09-850e-98cd1e538858">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_1e3a615c-650b-4830-a54a-e612707ae9f3">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_1e3a615c-650b-4830-a54a-e612707ae9f3_0_">
+                          <gml:posList srsDimension="3">683272.953 247428.308 413.00099 683283.201 247431.853 413.00099 683283.201 247431.853 423.69867 683272.953 247428.308 423.69867 683272.953 247428.308 413.00099</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_2aff2118-6e6a-46fe-bf11-cb170ef9c4dc">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683270.91321 247427.88273 423.69867</gml:lowerCorner>
+                  <gml:upperCorner>683283.51794 247439.9582 423.69867</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21335-1</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_c4ec4abd-8413-49c7-8c6c-9cd4b5905b9d">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_c0988553-5ce6-4443-9c9f-afe8d864763b">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_c0988553-5ce6-4443-9c9f-afe8d864763b_0_">
+                          <gml:posList srsDimension="3">683272.96122 247427.88273 423.69867 683283.51794 247431.53452 423.69867 683283.41674 247439.3847 423.69867 683272.787 247439.157 423.69867 683272.77071 247439.9582 423.69867 683270.91321 247439.92226 423.69867 683270.96373 247437.31103 423.69867 683272.417 247437.391 423.69867 683272.785 247436.996 423.69867 683272.96122 247427.88273 423.69867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+      <bldg:consistsOfBuildingPart>
+        <bldg:BuildingPart gml:id="UUID_64b9810c-725a-4a9d-8af4-cd26447bfefe">
+          <gml:boundedBy>
+            <gml:Envelope srsName="CH1903" srsDimension="3">
+              <gml:lowerCorner>683273.08833 247433.62884 423.69867</gml:lowerCorner>
+              <gml:upperCorner>683274.05499 247434.59047 430.92548</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <creationDate>2012-06-15</creationDate>
+          <externalReference>
+            <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+            <externalObject>
+              <name>z46f29566000001f7-2_1</name>
+            </externalObject>
+          </externalReference>
+          <gen:intAttribute name="Geomtype">
+            <gen:value>2</gen:value>
+          </gen:intAttribute>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_413d3fec-5f79-498f-9ba6-64b63aee2d67">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683273.08833 247433.62884 423.69867</gml:lowerCorner>
+                  <gml:upperCorner>683273.10657 247434.57213 430.92548</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21336-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_3ae2ebb5-0a29-48c4-8498-e4f0c0204ef8">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_33252bd1-6ff3-4bdb-a5a6-9815518e8141">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_33252bd1-6ff3-4bdb-a5a6-9815518e8141_0_">
+                          <gml:posList srsDimension="3">683273.10657 247433.62884 423.69867 683273.10657 247433.62884 430.92548 683273.08833 247434.57213 430.92548 683273.08833 247434.57213 423.69867 683273.10657 247433.62884 423.69867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_033528d0-355d-460a-90f4-68c0c2f178a9">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683273.10657 247433.62884 423.69867</gml:lowerCorner>
+                  <gml:upperCorner>683274.05499 247433.64718 430.92548</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21337-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_3d2af1dd-2d6a-45bd-9d12-77f42c10835e">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_728b424c-21f7-419e-89d6-e1cdba878ee9">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_728b424c-21f7-419e-89d6-e1cdba878ee9_0_">
+                          <gml:posList srsDimension="3">683274.05499 247433.64718 423.69867 683274.05499 247433.64718 430.92548 683273.10657 247433.62884 430.92548 683273.10657 247433.62884 423.69867 683274.05499 247433.64718 423.69867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_4a02c2d3-c997-4239-9e5d-35fb2432a63b">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683274.03675 247433.64718 423.69867</gml:lowerCorner>
+                  <gml:upperCorner>683274.05499 247434.59047 430.92548</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21338-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_8b126d40-1bec-48f2-9e8e-de204da4742d">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_9498c263-fa22-4537-8e0b-3a15b37501d1">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_9498c263-fa22-4537-8e0b-3a15b37501d1_0_">
+                          <gml:posList srsDimension="3">683274.03675 247434.59047 423.69867 683274.03675 247434.59047 430.92548 683274.05499 247433.64718 430.92548 683274.05499 247433.64718 423.69867 683274.03675 247434.59047 423.69867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:WallSurface gml:id="UUID_f3204497-ca69-4aa4-afb9-d44aede13948">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683273.08833 247434.57213 423.69867</gml:lowerCorner>
+                  <gml:upperCorner>683274.03675 247434.59047 430.92548</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21339-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_4aa7293f-8e80-46a3-bba7-47d30508a3f9">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_1a4a4923-507d-4c5a-8e01-4cd95335a3f8">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_1a4a4923-507d-4c5a-8e01-4cd95335a3f8_0_">
+                          <gml:posList srsDimension="3">683273.08833 247434.57213 423.69867 683273.08833 247434.57213 430.92548 683274.03675 247434.59047 430.92548 683274.03675 247434.59047 423.69867 683273.08833 247434.57213 423.69867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:WallSurface>
+          </bldg:boundedBy>
+          <bldg:boundedBy>
+            <bldg:RoofSurface gml:id="UUID_b4ad4d38-4a58-435e-ae67-397150561330">
+              <gml:boundedBy>
+                <gml:Envelope srsName="CH1903" srsDimension="3">
+                  <gml:lowerCorner>683273.08833 247433.62884 430.92548</gml:lowerCorner>
+                  <gml:upperCorner>683274.05499 247434.59047 430.92548</gml:upperCorner>
+                </gml:Envelope>
+              </gml:boundedBy>
+              <creationDate>2012-06-15</creationDate>
+              <externalReference>
+                <informationSystem>E:\Working\08_20120322\COWI_LoD2_08_20120322_part06.xml</informationSystem>
+                <externalObject>
+                  <name>SurfaceIDGeo21340-0</name>
+                </externalObject>
+              </externalReference>
+              <bldg:lod2MultiSurface>
+                <gml:MultiSurface gml:id="UUID_6a6a4771-1f1d-405c-a7cb-2e7f757f1e4f">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="UUID_f8d78c2a-ea54-4e08-8846-d03809e57e1c">
+                      <gml:exterior>
+                        <gml:LinearRing gml:id="UUID_f8d78c2a-ea54-4e08-8846-d03809e57e1c_0_">
+                          <gml:posList srsDimension="3">683273.10657 247433.62884 430.92548 683274.05499 247433.64718 430.92548 683274.03675 247434.59047 430.92548 683273.08833 247434.57213 430.92548 683273.10657 247433.62884 430.92548</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </bldg:lod2MultiSurface>
+            </bldg:RoofSurface>
+          </bldg:boundedBy>
+        </bldg:BuildingPart>
+      </bldg:consistsOfBuildingPart>
+    </bldg:Building>
+  </cityObjectMember>
+</CityModel>
+
