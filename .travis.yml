@@ -6,5 +6,14 @@ node_js:
 install: npm install
 script: npm test
 
+deploy:
+  provider: npm
+  email: reto@retokaiser.com
+  api_key:
+    secure: "bsU0tOK4Qq4C5QOywxePrMQcffMKf4ZWAh1tAvhw0P9U+FvfRbg89EFNAUc49+/qGPKjZ8LuiJ4NDc/Km8GE90W9/PDf8pb6iJb02XZPxGYARaZ+fTzDI+wI5wCuP/cT9GNvLtSisi6feg5CIxjP692f6GHAMopZlN1YpjHuvsaowrgsTmw+GqZJt9O5dBI72KyjibkjE7UyIU69C31FjkW7JBQ3Wbrr8zt8FiUOSH+cClHH1mwEDcG7xSZURpEXZbF7vc8BdJJFnNl/u8ZlU6X1kzwWYnGdBSPQwYlPWt3TwK/SyG4yqgpcHARM26tRguDLfUukTBEbGtoyIvfJ0I1HUtLVxA4bWhyg35CJaTazlqyVDyFBjkO6F4kfBtLee+faN/2VeZ9yGC5ZSMqNqJD+3txp8hVCY3wlqViWnpuH9Kj9xeW/SvaHTo2iGU3fPgOejTl1I1yQKBnCGBwP9WA4LvfNfOsyw7wLi16F68pYwhDVtIIb0ys1R8QhTGhf0K9XsbUzGog+7RbBsLA31wglfW7u8N+sXvOHZOY4lboGqQENgrYpMgHjhR6csW1Fsh/BlmvTJR5hmakC2LGQdX7mjuXmc4XPaYIDHsNkQ3WFoNlDktbN1Qik813N278nTRymqiHAg6ukF14t98n+vnnH96FMfkt+cAmUYKwobEM="
+  on:
+    tags: true
+    repo: njam/citygml-to-3dtiles
+
 notifications:
   email: false
