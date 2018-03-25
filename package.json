@@ -2,6 +2,7 @@
   "name": "citygml-to-3dtiles",
   "version": "1.0.0",
   "dependencies": {
+    "caporal": "^0.10.0",
     "cesium": "^1.43.0",
     "convex-hull": "^1.0.3",
     "convexhull-js": "^1.0.0",
@@ -22,5 +23,8 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha -r esm"
+  },
+  "bin": {
+    "citygml-to-3dtiles": "./bin/citygml-to-3dtiles.js"
   }
 }
