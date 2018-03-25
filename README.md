@@ -2,6 +2,7 @@ citygml-to-3dtiles
 ==================
 
 [![Build Status](https://img.shields.io/travis/njam/citygml-to-3dtiles/master.svg)](https://travis-ci.org/njam/citygml-to-3dtiles)
+[![npm](https://img.shields.io/npm/v/citygml-to-3dtiles.svg)](https://www.npmjs.com/package/citygml-to-3dtiles)
 
 A very *basic and experimental* converter from [CityGML](https://www.citygml.org/) to [Cesium 3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles).
 
