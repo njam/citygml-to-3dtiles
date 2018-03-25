@@ -1,4 +1,4 @@
-import CityModel from './citygml/CityModel.mjs';
+import CityDocument from './citygml/Document.mjs';
 import Converter from "./Converter.mjs";
 import chai from 'chai';
 
@@ -11,8 +11,8 @@ describe('Converter', async function() {
 
     before(async () => {
       let converter = new Converter();
-      let citygml = CityModel.fromFile('test/data/zurich-lod2-citygml1.xml');
-      let tileset = await converter.getTileset(citygml);
+      let cityDocument = CityDocument.fromFile('test/data/zurich-lod2-citygml1.xml');
+      let tileset = await converter.getTileset(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();
@@ -61,8 +61,8 @@ describe('Converter', async function() {
 
     before(async () => {
       let converter = new Converter();
-      let citygml = CityModel.fromFile('test/data/sig3d-genericattributes-citygml2.xml');
-      let tileset = await converter.getTileset(citygml);
+      let cityDocument = CityDocument.fromFile('test/data/sig3d-genericattributes-citygml2.xml');
+      let tileset = await converter.getTileset(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();
@@ -115,8 +115,8 @@ describe('Converter', async function() {
 
     before(async () => {
       let converter = new Converter();
-      let citygml = CityModel.fromFile('test/data/delft-citygml2.xml');
-      let tileset = await converter.getTileset(citygml);
+      let cityDocument = CityDocument.fromFile('test/data/delft-citygml2.xml');
+      let tileset = await converter.getTileset(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();

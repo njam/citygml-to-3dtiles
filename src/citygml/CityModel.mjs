@@ -1,5 +1,3 @@
-import xmldom from "xmldom";
-import fs from "fs";
 import CityNode from "./CityNode.mjs";
 import Building from "./CityObject/Building.mjs";
 import BoundingBox from "../geometry/BoundingBox.mjs";
@@ -62,18 +60,6 @@ class CityModel {
     }
 
     throw new Error('Failed to get bounding box for city-model');
-  }
-
-  /**
-   * @param {String} path
-   * @returns {CityModel}
-   */
-  static fromFile(path) {
-    let data = fs.readFileSync(path, 'utf8');
-    let dom = new xmldom.DOMParser().parseFromString(data);
-    let cityNode = new CityNode(dom);
-    let cityModel = cityNode.selectCityNode('./(citygml1:CityModel|citygml2:CityModel)');
-    return new CityModel(cityModel);
   }
 }
 

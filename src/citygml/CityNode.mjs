@@ -1,15 +1,16 @@
 import xpath from "xpath";
 import Cesium from "cesium";
-import srsTransform from "../srsTransform.mjs";
 
 let srsCache = {};
 
 class CityNode {
   /**
    * @param {Node} xmlNode
+   * @param {Document} document
    */
-  constructor(xmlNode) {
+  constructor(xmlNode, document) {
     this.xmlNode = xmlNode;
+    this.document = document;
   }
 
   /**
@@ -83,7 +84,7 @@ class CityNode {
    */
   selectCityNodes(expression) {
     return this.selectNodes(expression).map((xmlNode) => {
-      return new CityNode(xmlNode);
+      return new CityNode(xmlNode, this.document);
     });
   }
 
@@ -92,7 +93,7 @@ class CityNode {
    * @returns {CityNode}
    */
   selectCityNode(expression) {
-    return new CityNode(this.selectNode(expression));
+    return new CityNode(this.selectNode(expression), this.document);
   }
 
   /**
@@ -104,7 +105,7 @@ class CityNode {
     if (!xmlNode) {
       return null;
     }
-    return new CityNode(xmlNode);
+    return new CityNode(xmlNode, this.document);
   }
 
   /**
@@ -112,6 +113,8 @@ class CityNode {
    */
   getTextAsCoordinates() {
     let srs = this.getSRS();
+    let srsTranslator = this.document.getSRSTranslator();
+
     let text = this.xmlNode.textContent;
     let textTokens = text.trim().split(' ');
     if (textTokens.length % 3 !== 0) {
@@ -121,7 +124,7 @@ class CityNode {
     while (textTokens.length > 0) {
       let point = textTokens.splice(0, 3);
       point = point.map(p => parseFloat(p));
-      point = srsTransform(point, srs, 'WGS84');
+      point = srsTranslator.forward(point, srs, 'WGS84');
       point = Cesium.Cartesian3.fromDegrees(point[0], point[1], point[2]);
       points.push(point);
     }

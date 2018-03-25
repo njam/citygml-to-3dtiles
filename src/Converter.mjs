@@ -1,5 +1,5 @@
 import BatchTable from "./3dtiles/BatchTable.mjs";
-import CityModel from "./citygml/CityModel.mjs";
+import CityDocument from "./citygml/Document.mjs";
 import Mesh from "./3dtiles/Mesh.mjs";
 import createGltf from "./3dtiles/createGltf.mjs";
 import Batched3DModel from "./3dtiles/Batched3DModel.mjs";
@@ -21,18 +21,19 @@ class Converter {
    * @param {String} outputFolder Path to folder to write 3D-Tiles files to
    */
   async convertFiles(inputPath, outputFolder) {
-    let citygml = CityModel.fromFile(inputPath);
-    let tileset = await this.getTileset(citygml);
+    let cityDocument = CityDocument.fromFile(inputPath);
+    let tileset = await this.getTileset(cityDocument);
     await tileset.writeToFolder(outputFolder);
   }
 
   /**
-   * @param {CityModel} citygml
+   * @param {Document} cityDocument
    * @returns {Tileset}
    */
-  async getTileset(citygml) {
-    let cityObjects = citygml.getCityObjects();
-    let boundingBox = citygml.getBoundingBox();
+  async getTileset(cityDocument) {
+    let cityModel = cityDocument.getCityModel();
+    let cityObjects = cityModel.getCityObjects();
+    let boundingBox = cityModel.getBoundingBox();
 
     let meshes = cityObjects.map((o, i) => {
       return Mesh.fromTriangleMesh(o.getTriangleMesh());
