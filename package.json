@@ -1,6 +1,6 @@
 {
   "name": "citygml-to-3dtiles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/njam/citygml-to-3dtiles",
   "license": "Apache-2.0",
   "dependencies": {
@@ -26,6 +26,6 @@
   },
   "main": "./src/Converter.mjs",
   "bin": {
-    "citygml-to-3dtiles": "./bin/citygml-to-3dtiles.js"
+    "citygml-to-3dtiles": "./bin/citygml-to-3dtiles.mjs"
   }
 }
