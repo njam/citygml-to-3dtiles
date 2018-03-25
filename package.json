@@ -24,6 +24,7 @@
   "scripts": {
     "test": "node_modules/.bin/mocha -r esm"
   },
+  "main": "./src/Converter.mjs",
   "bin": {
     "citygml-to-3dtiles": "./bin/citygml-to-3dtiles.js"
   }
