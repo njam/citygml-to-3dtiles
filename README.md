@@ -125,3 +125,8 @@ Run tests:
 ```
 npm test
 ```
+
+Release a new version:
+1. Bump version in `package.json`
+2. Push a new tag to master
+3. The Travis build will deploy to NPM
