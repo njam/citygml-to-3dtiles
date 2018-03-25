@@ -4,6 +4,7 @@ import Mesh from "./3dtiles/Mesh.mjs";
 import createGltf from "./3dtiles/createGltf.mjs";
 import Batched3DModel from "./3dtiles/Batched3DModel.mjs";
 import Tileset from "./3dtiles/Tileset.mjs";
+import SRSTranslator from "./citygml/SRSTranslator.mjs";
 
 class Converter {
 
@@ -13,6 +14,7 @@ class Converter {
   constructor(options) {
     this.options = Object.assign({
       propertiesGetter: null,
+      srsProjections: {}
     }, options);
   }
 
@@ -21,7 +23,8 @@ class Converter {
    * @param {String} outputFolder Path to folder to write 3D-Tiles files to
    */
   async convertFiles(inputPath, outputFolder) {
-    let cityDocument = CityDocument.fromFile(inputPath);
+    let srsTranslator = new SRSTranslator(this.options.srsProjections);
+    let cityDocument = CityDocument.fromFile(inputPath, srsTranslator);
     let tileset = await this.getTileset(cityDocument);
     await tileset.writeToFolder(outputFolder);
   }
