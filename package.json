@@ -1,6 +1,6 @@
 {
   "name": "citygml-to-3dtiles",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "dependencies": {
     "caporal": "^0.10.0",
     "cesium": "^1.43.0",
