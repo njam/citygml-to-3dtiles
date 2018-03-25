@@ -1,17 +1,17 @@
 {
   "name": "citygml-to-3dtiles",
   "version": "0.0.0",
+  "repository": "https://github.com/njam/citygml-to-3dtiles",
+  "license": "Apache-2.0",
   "dependencies": {
     "caporal": "^0.10.0",
     "cesium": "^1.43.0",
-    "convex-hull": "^1.0.3",
     "convexhull-js": "^1.0.0",
     "fs-extra": "^5.0.0",
     "gltf-pipeline": "^1.0.2",
     "i": "^0.3.6",
     "npm": "^5.8.0",
     "proj4": "^2.4.4",
-    "promise": "^8.0.1",
     "quickhull3d": "^2.0.3",
     "xmldom": "^0.1.27",
     "xpath": "0.0.24"
