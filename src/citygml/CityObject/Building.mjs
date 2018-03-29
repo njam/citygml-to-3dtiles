@@ -33,10 +33,10 @@ class Building extends CityObject {
    * @returns {TriangleMesh}
    */
   getTriangleMesh() {
-    let linearRings = this.getLinearRings();
-    let triangles = linearRings.reduce((accumulator, ring) => {
-      return accumulator.concat(ring.convertToTriangles());
-    }, []);
+    let triangles = [];
+    this.getLinearRings().forEach(ring => {
+      return triangles.push(...ring.convertToTriangles());
+    });
     return new TriangleMesh(triangles);
   }
 
