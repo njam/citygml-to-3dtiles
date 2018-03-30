@@ -1,4 +1,5 @@
 import Triangle from "./Triangle.mjs";
+import Tesselator from "./Tesselator";
 
 class LinearRing {
   /**
@@ -22,16 +23,9 @@ class LinearRing {
    * @returns {Triangle[]}
    */
   convertToTriangles() {
-    let vertices = this.vertices.slice();
-    let triangles = [];
-    while (vertices.length > 3) {
-      const triangle = new Triangle(vertices.slice(0, 3));
-      triangles.push(triangle);
-      vertices.splice(1, 1);
-    }
-    return triangles;
+    let tesselator = new Tesselator();
+    return tesselator.triangulate(this.getVertices());
   }
-
 }
 
 export default LinearRing
