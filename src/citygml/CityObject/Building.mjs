@@ -1,6 +1,7 @@
 import LinearRing from "../../geometry/LinearRing.mjs";
 import TriangleMesh from "../../geometry/TriangleMesh.mjs";
 import CityObject from "../CityObject.mjs";
+
 class Building extends CityObject {
 
   /**
@@ -33,11 +34,14 @@ class Building extends CityObject {
    * @returns {TriangleMesh}
    */
   getTriangleMesh() {
-    let triangles = [];
-    this.getLinearRings().forEach(ring => {
-      return triangles.push(...ring.convertToTriangles());
-    });
-    return new TriangleMesh(triangles);
+    if (!this.triangleMesh) {
+      let linearRings = this.getLinearRings();
+      let triangles = linearRings.reduce((accumulator, ring) => {
+        return accumulator.concat(ring.convertToTriangles());
+      }, []);
+      this.triangleMesh = new TriangleMesh(triangles);
+    }
+    return this.triangleMesh;
   }
 
 }
