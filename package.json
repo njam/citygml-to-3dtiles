@@ -27,6 +27,6 @@
   },
   "main": "./src/Converter.mjs",
   "bin": {
-    "citygml-to-3dtiles": "./bin/citygml-to-3dtiles.mjs"
+    "citygml-to-3dtiles": "bin/citygml-to-3dtiles.mjs"
   }
 }

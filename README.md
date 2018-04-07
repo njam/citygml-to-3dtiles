@@ -26,12 +26,7 @@ Usage
 
 ### CLI Script
 
-To convert a CityGML XML file to a 3D Tileset:
-```
-./bin/citygml-to-3dtiles.mjs <input.xml> <output/>
-```
-
-When converting larger files the memory limit of Node might need to be increased:
+To convert a CityGML XML file to a 3D Tileset with 10GB memory limit:
 ```
 node \
   --max-old-space-size=10000 \  # 10GB memory

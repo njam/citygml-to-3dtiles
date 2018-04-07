@@ -1,4 +1,4 @@
-#!/usr/bin/node --experimental-modules
+#!/usr/bin/env node
 
 import caporal from 'caporal'
 import Converter from "../src/Converter.mjs";
