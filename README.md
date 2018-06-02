@@ -35,6 +35,9 @@ node \
   ./bin/citygml-to-3dtiles.mjs <input.xml> <output/>
 ```
 
+Instead of a single input file the script also accepts a path to a folder containing multiple CityGML files.
+The contents of all files will get concatenated and written to a single 3D Tileset.
+
 ### Programmatic Usage
 The library exposes an easy to use API to convert from CityGML to 3D Tiles.
 Using the library programmatically allows us to calculate custom *properties* and store them in the resulting tileset.

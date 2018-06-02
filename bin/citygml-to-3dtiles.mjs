@@ -5,7 +5,7 @@ import Converter from "../src/Converter.mjs";
 import fs from "fs";
 
 caporal
-  .argument('<input-citygml>', 'Input path of CityGML XML file', (path) => {
+  .argument('<input-citygml>', 'Input path of CityGML XML file, or folder with multiple files', (path) => {
     if (!fs.existsSync(path)) {
       throw new Error('File does not exist: ' + path);
     }

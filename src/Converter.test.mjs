@@ -12,7 +12,7 @@ describe('Converter', async function() {
     before(async () => {
       let converter = new Converter();
       let cityDocument = CityDocument.fromFile('test/data/zurich-lod2-citygml1.xml');
-      let tileset = await converter.getTileset(cityDocument);
+      let tileset = await converter.convertCityDocument(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();
@@ -62,7 +62,7 @@ describe('Converter', async function() {
     before(async () => {
       let converter = new Converter();
       let cityDocument = CityDocument.fromFile('test/data/sig3d-genericattributes-citygml2.xml');
-      let tileset = await converter.getTileset(cityDocument);
+      let tileset = await converter.convertCityDocument(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();
@@ -116,7 +116,7 @@ describe('Converter', async function() {
     before(async () => {
       let converter = new Converter();
       let cityDocument = CityDocument.fromFile('test/data/delft-citygml2.xml');
-      let tileset = await converter.getTileset(cityDocument);
+      let tileset = await converter.convertCityDocument(cityDocument);
 
       tilesetJson = tileset.getJson('foo.b3dm');
       b3dm = tileset.getBatched3DModel();

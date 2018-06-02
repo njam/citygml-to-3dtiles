@@ -1,10 +1,13 @@
 import BatchTable from "./3dtiles/BatchTable.mjs";
 import CityDocument from "./citygml/Document.mjs";
+import BoundingBox from "./geometry/BoundingBox.mjs";
 import Mesh from "./3dtiles/Mesh.mjs";
 import createGltf from "./3dtiles/createGltf.mjs";
 import Batched3DModel from "./3dtiles/Batched3DModel.mjs";
 import Tileset from "./3dtiles/Tileset.mjs";
 import SRSTranslator from "./citygml/SRSTranslator.mjs";
+import fs from 'fs'
+import Path from 'path'
 
 class Converter {
 
@@ -19,27 +22,48 @@ class Converter {
   }
 
   /**
-   * @param {String} inputPath Path to CityGML XML file
+   * @param {String} inputPath Path to CityGML XML file, or folder with multiple files
    * @param {String} outputFolder Path to folder to write 3D-Tiles files to
    */
   async convertFiles(inputPath, outputFolder) {
+    let inputPaths = this._findInputFiles(inputPath);
     let srsTranslator = new SRSTranslator(this.options.srsProjections);
-    let cityDocument = CityDocument.fromFile(inputPath, srsTranslator);
-    let tileset = await this.getTileset(cityDocument);
+
+    let cityObjects = [], boundingBoxes = [];
+    inputPaths.forEach((inputPath, i) => {
+      console.debug(`Reading CityGML file ${i}/${inputPaths.length}...`);
+      let cityDocument = CityDocument.fromFile(inputPath, srsTranslator);
+      let cityModel = cityDocument.getCityModel();
+      cityObjects.push(...cityModel.getCityObjects());
+      boundingBoxes.push(cityModel.getBoundingBox());
+    });
+
+    console.debug(`Converting to 3D Tiles...`);
+    let boundingBox = BoundingBox.fromBoundingBoxes(boundingBoxes);
+    let tileset = await this.convertCityObjects(cityObjects, boundingBox);
+
+    console.debug(`Writing 3D Tiles...`);
     await tileset.writeToFolder(outputFolder);
+    console.debug('Done.');
   }
 
   /**
    * @param {Document} cityDocument
    * @returns {Tileset}
    */
-  async getTileset(cityDocument) {
+  async convertCityDocument(cityDocument) {
     let cityModel = cityDocument.getCityModel();
-    let cityObjects = cityModel.getCityObjects();
-    let boundingBox = cityModel.getBoundingBox();
+    return await this.convertCityObjects(cityModel.getCityObjects(), cityModel.getBoundingBox());
+  }
 
-    let meshes = cityObjects.map((o, i) => {
-      return Mesh.fromTriangleMesh(o.getTriangleMesh());
+  /**
+   * @param  {CityObject[]} cityObjects
+   * @param  {BoundingBox} boundingBox
+   * @returns {Tileset}
+   */
+  async convertCityObjects(cityObjects, boundingBox) {
+    let meshes = cityObjects.map((cityObject) => {
+      return Mesh.fromTriangleMesh(cityObject.getTriangleMesh());
     });
     let mesh = Mesh.batch(meshes);
 
@@ -76,6 +100,33 @@ class Converter {
       )
     }
     return properties;
+  }
+
+  /**
+   * @param {String} path
+   * @returns {String[]}
+   * @private
+   */
+  _findInputFiles(path) {
+    if (!fs.existsSync(path)) {
+      throw new Error(`Input path does not exist: ${path}`);
+    }
+
+    let paths;
+    if (fs.statSync(path).isDirectory()) {
+      paths = fs.readdirSync(path)
+        .map((filename) => Path.join(path, filename))
+        .filter((path) => fs.statSync(path).isFile());
+    } else {
+      paths = [path];
+    }
+    paths = paths.filter((path) => ['.xml', '.gml'].includes(Path.extname(path)));
+
+    if (paths.length < 1) {
+      throw new Error(`Could not find any .xml/.gml files in path: ${path}`);
+    }
+
+    return paths;
   }
 }
 
