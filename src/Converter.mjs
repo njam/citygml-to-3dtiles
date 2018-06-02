@@ -31,7 +31,7 @@ class Converter {
 
     let cityObjects = [], boundingBoxes = [];
     inputPaths.forEach((inputPath, i) => {
-      console.debug(`Reading CityGML file ${i}/${inputPaths.length}...`);
+      console.debug(`Reading CityGML file ${i+1}/${inputPaths.length}...`);
       let cityDocument = CityDocument.fromFile(inputPath, srsTranslator);
       let cityModel = cityDocument.getCityModel();
       cityObjects.push(...cityModel.getCityObjects());
