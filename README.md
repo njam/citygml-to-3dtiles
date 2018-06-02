@@ -11,7 +11,8 @@ About
 
 The purpose of this JavaScript code is to read CityGML files, extract objects (like buildings),
 and write the corresponding meshes as a [batched 3D model](https://github.com/AnalyticalGraphicsInc/3d-tiles/blob/master/TileFormats/Batched3DModel/README.md) in the *3D Tiles* spec.
-Each building will become a *feature*, and its attributes will be stored in the *3D Tiles batch table*. 
+Each building will become a *feature*, and its attributes will be stored in the *3D Tiles batch table*.
+For more information see [docs/background.md](docs/background.md). 
 
 The code for writing *3D Tiles* files is based on the [3D Tiles Samples Generator](https://github.com/AnalyticalGraphicsInc/3d-tiles-tools/tree/master/samples-generator).
 
@@ -25,7 +26,7 @@ Usage
 -----
 
 ### CLI Script
-
+The library provides an executable to convert files on the command line.
 To convert a CityGML XML file to a 3D Tileset with 10GB memory limit:
 ```
 node \
@@ -35,8 +36,8 @@ node \
 ```
 
 ### Programmatic Usage
-
-The converter can be used programmatically, which allows for customizing the conversion.
+The library exposes an easy to use API to convert from CityGML to 3D Tiles.
+Using the library programmatically allows us to calculate custom *properties* and store them in the resulting tileset.
 ```js
 import Converter from "citygml-to-3dtiles";
 
@@ -47,9 +48,13 @@ await converter.convertFiles('./input.xml', './output/');
 #### Option: `propertiesGetter`
 By default any CityGML *attributes* and *external references* are stored in the 3D Tiles *batch table*.
 Additional properties can be stored per feature by passing `propertiesGetter`.
-This function will be called for each *city object* and should return an object of key/value pairs.
+The function `propertiesGetter` is executed once for each city object and the key/value pairs of the return value will become the model's properties.
+The function receives two arguments:
+- **cityObject**: An instance of type `CityObject`. Can be used to retrieve the object's geometry and to access the corresponding XML node from the CityGML.
+- **properties**: Key/value pairs of all the *attributes* and *external references* from the CityGML. Usually each building will have some kind of identifier assigned to it, which could be used to link the data to other data sets. That way we can blend in other tables of data referencing the same buildings.
 
-Get the value of an element `<measuredHeight>` in the XML namespace "bldg2" (http://www.opengis.net/citygml/building/2.0)
+
+Example: Get the value of an element `<measuredHeight>` in the XML namespace "bldg2" (http://www.opengis.net/citygml/building/2.0)
 and store it as "measuredHeight" in the batch table:
 ```js
 let converter = new Converter({
@@ -65,7 +70,7 @@ let converter = new Converter({
 await converter.convertFiles('./input.xml', './output/');
 ```
 
-Store the convex surface area of each building (calculated from the geometry) in the property "surfaceArea":
+Example: Store the convex surface area of each building (calculated from the geometry) in the property "surfaceArea":
 ```js
 import Converter from "citygml-to-3dtiles";
 
