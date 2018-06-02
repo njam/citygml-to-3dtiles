@@ -21,9 +21,9 @@ class CityObject {
   }
 
   /**
-   * @returns {Mesh}
+   * @returns {TriangleMesh}
    */
-  getMesh() {
+  getTriangleMesh() {
     throw new Error("Not implemented");
   }
 
