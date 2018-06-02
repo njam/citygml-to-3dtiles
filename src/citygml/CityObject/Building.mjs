@@ -18,14 +18,21 @@ class Building extends CityObject {
   getLinearRings() {
     if (!this.rings) {
       this.rings = this.cityNode.selectCityNodes('.//gml:Polygon//gml:LinearRing')
-        .map(ring => {
-          let pos = ring.selectCityNodes('./gml:pos');
+        .map(ringNode => {
+          let pos = ringNode.selectCityNodes('./gml:pos');
           let points = pos.map(n => n.getTextAsCoordinates1());
           if (points.length === 0) {
-            points = ring.selectCityNode('./gml:posList').getTextAsCoordinates();
+            points = ringNode.selectCityNode('./gml:posList').getTextAsCoordinates();
           }
+
+          if (points.length < 4) {
+            console.error(`WARNING: Ignoring "LinearRing" with less than 4 points at ${ringNode.getDocumentURI()} line ${ringNode.getLineNumber()}`);
+            return null;
+          }
+
           return new LinearRing(points);
-        });
+        })
+        .filter(ring => !!ring);
     }
     return this.rings;
   }

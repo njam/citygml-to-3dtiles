@@ -39,6 +39,20 @@ class CityNode {
   }
 
   /**
+   * @returns {String}
+   */
+  getLineNumber() {
+    return this.xmlNode.lineNumber;
+  }
+
+  /**
+   * @returns {String}
+   */
+  getDocumentURI() {
+    return this.xmlNode.ownerDocument.documentURI;
+  }
+
+  /**
    * @param {String} name
    * @returns {String}
    */

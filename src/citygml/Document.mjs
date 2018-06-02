@@ -41,7 +41,12 @@ class Document {
       srsTranslator = new SRSTranslator();
     }
     let data = fs.readFileSync(path, 'utf8');
-    let dom = new xmldom.DOMParser().parseFromString(data);
+    let domParser = new xmldom.DOMParser({
+      locator: {
+        systemId: path,
+      },
+    });
+    let dom = domParser.parseFromString(data);
     return new Document(dom, srsTranslator);
   }
 
