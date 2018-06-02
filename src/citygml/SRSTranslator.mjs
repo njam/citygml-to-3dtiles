@@ -87,6 +87,7 @@ class SRSTranslator {
       'urn:ogc:def:crs:EPSG::7415': '+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +vunits=m +no_defs',
       'EPSG:25833': '+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
       'urn:adv:crs:ETRS89_UTM32*DE_DHHN92_NH': '+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs ',
+      'urn:adv:crs:ETRS89_UTM32*DE_DHHN2016_NH': '+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs ',
     };
   }
 
