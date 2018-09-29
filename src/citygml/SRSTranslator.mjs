@@ -88,6 +88,7 @@ class SRSTranslator {
       'EPSG:25833': '+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
       'urn:adv:crs:ETRS89_UTM32*DE_DHHN92_NH': '+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs ',
       'urn:adv:crs:ETRS89_UTM32*DE_DHHN2016_NH': '+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs ',
+      'urn:ogc:def:crs,crs:EPSG::3414,crs:EPSG::6916': '+proj=tmerc +lat_0=1.366666666666667 +lon_0=103.8333333333333 +k=1 +x_0=28001.642 +y_0=38744.572 +ellps=WGS84 +units=m +no_defs',
     };
   }
 
