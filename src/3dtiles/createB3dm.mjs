@@ -2,12 +2,12 @@
  * Based on:
  * https://github.com/AnalyticalGraphicsInc/3d-tiles-tools/blob/master/samples-generator/lib/createB3dm.js
  */
-import Cesium from 'cesium';
+import Cesium from 'cesium'
 
-export default createB3dm;
+export default createB3dm
 
-let defaultValue = Cesium.defaultValue;
-let defined = Cesium.defined;
+let defaultValue = Cesium.defaultValue
+let defined = Cesium.defined
 
 /**
  * Create a Batched 3D Model (b3dm) tile from a binary glTF and per-feature metadata.
@@ -20,33 +20,33 @@ let defined = Cesium.defined;
  * @param {Buffer} [options.batchTableBinary] The batch table binary.
  * @returns {Buffer} The generated b3dm tile buffer.
  */
-function createB3dm(options) {
-  let glb = options.glb;
+function createB3dm (options) {
+  let glb = options.glb
 
-  let headerByteLength = 28;
-  let featureTableJson = getJsonBufferPadded(options.featureTableJson, headerByteLength);
-  let featureTableBinary = getBufferPadded(options.featureTableBinary);
-  let batchTableJson = getJsonBufferPadded(options.batchTableJson);
-  let batchTableBinary = getBufferPadded(options.batchTableBinary);
+  let headerByteLength = 28
+  let featureTableJson = getJsonBufferPadded(options.featureTableJson, headerByteLength)
+  let featureTableBinary = getBufferPadded(options.featureTableBinary)
+  let batchTableJson = getJsonBufferPadded(options.batchTableJson)
+  let batchTableBinary = getBufferPadded(options.batchTableBinary)
 
-  let version = 1;
-  let featureTableJsonByteLength = featureTableJson.length;
-  let featureTableBinaryByteLength = featureTableBinary.length;
-  let batchTableJsonByteLength = batchTableJson.length;
-  let batchTableBinaryByteLength = batchTableBinary.length;
-  let gltfByteLength = glb.length;
-  let byteLength = headerByteLength + featureTableJsonByteLength + featureTableBinaryByteLength + batchTableJsonByteLength + batchTableBinaryByteLength + gltfByteLength;
+  let version = 1
+  let featureTableJsonByteLength = featureTableJson.length
+  let featureTableBinaryByteLength = featureTableBinary.length
+  let batchTableJsonByteLength = batchTableJson.length
+  let batchTableBinaryByteLength = batchTableBinary.length
+  let gltfByteLength = glb.length
+  let byteLength = headerByteLength + featureTableJsonByteLength + featureTableBinaryByteLength + batchTableJsonByteLength + batchTableBinaryByteLength + gltfByteLength
 
-  let header = Buffer.alloc(headerByteLength);
-  header.write('b3dm', 0);
-  header.writeUInt32LE(version, 4);
-  header.writeUInt32LE(byteLength, 8);
-  header.writeUInt32LE(featureTableJsonByteLength, 12);
-  header.writeUInt32LE(featureTableBinaryByteLength, 16);
-  header.writeUInt32LE(batchTableJsonByteLength, 20);
-  header.writeUInt32LE(batchTableBinaryByteLength, 24);
+  let header = Buffer.alloc(headerByteLength)
+  header.write('b3dm', 0)
+  header.writeUInt32LE(version, 4)
+  header.writeUInt32LE(byteLength, 8)
+  header.writeUInt32LE(featureTableJsonByteLength, 12)
+  header.writeUInt32LE(featureTableBinaryByteLength, 16)
+  header.writeUInt32LE(batchTableJsonByteLength, 20)
+  header.writeUInt32LE(batchTableBinaryByteLength, 24)
 
-  return Buffer.concat([header, featureTableJson, featureTableBinary, batchTableJson, batchTableBinary, glb]);
+  return Buffer.concat([header, featureTableJson, featureTableBinary, batchTableJson, batchTableBinary, glb])
 }
 
 /**
@@ -57,19 +57,19 @@ function createB3dm(options) {
  * @param {Number} [byteOffset=0] The byte offset on which the buffer starts.
  * @returns {Buffer} The padded buffer.
  */
-function getBufferPadded(buffer, byteOffset) {
+function getBufferPadded (buffer, byteOffset) {
   if (!defined(buffer)) {
-    return Buffer.alloc(0);
+    return Buffer.alloc(0)
   }
 
-  byteOffset = defaultValue(byteOffset, 0);
+  byteOffset = defaultValue(byteOffset, 0)
 
-  let boundary = 8;
-  let byteLength = buffer.length;
-  let remainder = (byteOffset + byteLength) % boundary;
-  let padding = (remainder === 0) ? 0 : boundary - remainder;
-  let emptyBuffer = Buffer.alloc(padding);
-  return Buffer.concat([buffer, emptyBuffer]);
+  let boundary = 8
+  let byteLength = buffer.length
+  let remainder = (byteOffset + byteLength) % boundary
+  let padding = (remainder === 0) ? 0 : boundary - remainder
+  let emptyBuffer = Buffer.alloc(padding)
+  return Buffer.concat([buffer, emptyBuffer])
 }
 
 /**
@@ -83,23 +83,23 @@ function getBufferPadded(buffer, byteOffset) {
  * @param {Number} [byteOffset=0] The byte offset on which the buffer starts.
  * @returns {Buffer} The padded JSON buffer.
  */
-function getJsonBufferPadded(json, byteOffset) {
+function getJsonBufferPadded (json, byteOffset) {
   if (!defined(json)) {
-    return Buffer.alloc(0);
+    return Buffer.alloc(0)
   }
 
-  byteOffset = defaultValue(byteOffset, 0);
-  let string = JSON.stringify(json);
+  byteOffset = defaultValue(byteOffset, 0)
+  let string = JSON.stringify(json)
 
-  let boundary = 8;
-  let byteLength = Buffer.byteLength(string);
-  let remainder = (byteOffset + byteLength) % boundary;
-  let padding = (remainder === 0) ? 0 : boundary - remainder;
-  let whitespace = '';
+  let boundary = 8
+  let byteLength = Buffer.byteLength(string)
+  let remainder = (byteOffset + byteLength) % boundary
+  let padding = (remainder === 0) ? 0 : boundary - remainder
+  let whitespace = ''
   for (let i = 0; i < padding; ++i) {
-    whitespace += ' ';
+    whitespace += ' '
   }
-  string += whitespace;
+  string += whitespace
 
-  return Buffer.from(string);
+  return Buffer.from(string)
 }

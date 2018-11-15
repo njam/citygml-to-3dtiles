@@ -1,20 +1,20 @@
-import Batched3DModel from "./Batched3DModel.mjs";
-import fsExtra from "fs-extra";
-import path from "path";
+import Batched3DModel from './Batched3DModel.mjs'
+import fsExtra from 'fs-extra'
+import path from 'path'
 
 class Tileset {
   /**
    * @param {Batched3DModel} b3dm
    */
-  constructor(b3dm) {
-    this.b3dm = b3dm;
+  constructor (b3dm) {
+    this.b3dm = b3dm
   }
 
   /**
    * @param {String} tileName
    * @returns {String}
    */
-  getJson(tileName) {
+  getJson (tileName) {
     let data = {
       asset: {
         version: '0.0'
@@ -31,24 +31,24 @@ class Tileset {
           url: tileName
         }
       }
-    };
-    return JSON.stringify(data, null, 2);
+    }
+    return JSON.stringify(data, null, 2)
   }
 
   /**
    * @returns {Batched3DModel}
    */
-  getBatched3DModel() {
-    return this.b3dm;
+  getBatched3DModel () {
+    return this.b3dm
   }
 
   /**
    * @param {String} folder
    * @returns {Promise}
    */
-  async writeToFolder(folder) {
-    fsExtra.outputFile(path.join(folder, 'full.b3dm'), await this.b3dm.getBuffer());
-    fsExtra.outputFile(path.join(folder, 'tileset.json'), this.getJson('full.b3dm'));
+  async writeToFolder (folder) {
+    fsExtra.outputFile(path.join(folder, 'full.b3dm'), await this.b3dm.getBuffer())
+    fsExtra.outputFile(path.join(folder, 'tileset.json'), this.getJson('full.b3dm'))
   }
 }
 
