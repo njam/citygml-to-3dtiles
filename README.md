@@ -69,20 +69,34 @@ let converter = new Converter({
     }
   }
 });
-
 await converter.convertFiles('./input.xml', './output/');
 ```
 
 Example: Store the convex surface area of each building (calculated from the geometry) in the property "surfaceArea":
 ```js
-import Converter from "citygml-to-3dtiles";
-
 let converter = new Converter({
   propertiesGetter: (cityObject, properties) => {
     let mesh = cityObject.getTriangleMesh();
     return {
       surfaceArea: mesh.getSurfaceArea()
     }
+  }
+});
+await converter.convertFiles('./input.xml', './output/');
+```
+
+#### Option: `objectFilter`
+Allows to remove city objects (buildings) based on a callback function.
+The function specified receives the city object (`CityObject`) as its only argument and should return `true` or `false` to decide
+whether to include it in the 3DTiles output. 
+
+Example: Only include objects with a maximum distance of 600m of a given point.
+```js
+let center = Cesium.Cartesian3.fromDegrees(8.5177282, 47.3756023);
+let converter = new Converter({
+  objectFilter: (cityObject) => {
+    let distance = Cesium.Cartesian3.distance(center, cityObject.getAnyPoint());
+    return distance < 600;
   }
 });
 await converter.convertFiles('./input.xml', './output/');
@@ -95,8 +109,6 @@ Height component of coordinates is *not* transformed according to the SRS, becau
 
 Only a few SRS are defined by default. Additional SRS can be passed to the converter:
 ```
-import Converter from "citygml-to-3dtiles";
-
 let converter = new Converter({
   srsProjections: {
     'CH1903': '+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=600000 +y_0=200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs',
