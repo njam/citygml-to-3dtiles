@@ -1,36 +1,36 @@
-import Envelope from "./Envelope.mjs";
+import Envelope from './Envelope.mjs'
 
 class CityObject {
 
   /**
    * @param {CityNode} cityNode
    */
-  constructor(cityNode) {
-    this.cityNode = cityNode;
+  constructor (cityNode) {
+    this.cityNode = cityNode
   }
 
   /**
    * @returns {Envelope|Null}
    */
-  getEnvelope() {
-    let envelopeNode = this.cityNode.findCityNode('./gml:boundedBy/gml:Envelope');
+  getEnvelope () {
+    let envelopeNode = this.cityNode.findCityNode('./gml:boundedBy/gml:Envelope')
     if (!envelopeNode) {
-      return null;
+      return null
     }
-    return new Envelope(envelopeNode);
+    return new Envelope(envelopeNode)
   }
 
   /**
    * @returns {TriangleMesh}
    */
-  getTriangleMesh() {
-    throw new Error("Not implemented");
+  getTriangleMesh () {
+    throw new Error('Not implemented')
   }
 
   /**
    * @returns {Object}
    */
-  getAttributes() {
+  getAttributes () {
     const tagNames = [
       'gen1:stringAttribute',
       'gen1:intAttribute',
@@ -44,35 +44,50 @@ class CityObject {
       'gen2:dateAttribute',
       'gen2:uriAttribute',
       'gen2:measureAttribute',
-    ];
-    const query = './/(' + tagNames.join('|') + ')';
-    const attrs = {};
+    ]
+    const query = './/(' + tagNames.join('|') + ')'
+    const attrs = {}
     this.cityNode.selectCityNodes(query).forEach(node => {
-      const name = node.getAttribute('name');
-      let value = node.selectNode('./(gen1:value|gen2:value)').textContent;
-      let tagName = node.getLocalName();
+      const name = node.getAttribute('name')
+      let value = node.selectNode('./(gen1:value|gen2:value)').textContent
+      let tagName = node.getLocalName()
       if (tagName === 'intAttribute') {
-        value = parseInt(value);
+        value = parseInt(value)
       }
       if (tagName === 'doubleAttribute' || tagName === 'measureAttribute') {
-        value = parseFloat(value);
+        value = parseFloat(value)
       }
-      attrs[name] = value;
-    });
+      attrs[name] = value
+    })
 
-    return attrs;
+    return attrs
   }
 
   /**
    * @returns {Object}
    */
-  getExternalReferences() {
-    const refs = {};
+  getExternalReferences () {
+    const refs = {}
     this.cityNode.selectCityNodes('./citygml1:externalReference').forEach(node => {
-      const name = node.selectNode('./citygml1:informationSystem').textContent;
-      refs[name] = node.selectNode('./citygml1:externalObject/citygml1:name').textContent;
-    });
-    return refs;
+      const name = node.selectNode('./citygml1:informationSystem').textContent
+      refs[name] = node.selectNode('./citygml1:externalObject/citygml1:name').textContent
+    })
+    return refs
+  }
+
+  /**
+   * @returns {Cesium.Cartesian3|Null}
+   */
+  getAnyPoint () {
+    let posLists = this.cityNode.selectCityNodes('.//gml:posList')
+    if (posLists.length === 0) {
+      return null
+    }
+    let coordinates = posLists[0].getTextAsCoordinates()
+    if (coordinates.length === 0) {
+      return null
+    }
+    return coordinates[0]
   }
 }
 
