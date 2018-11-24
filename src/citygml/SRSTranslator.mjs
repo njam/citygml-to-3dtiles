@@ -70,7 +70,7 @@ class SRSTranslator {
    */
   _getProjection (name) {
     if (!this.projections[name]) {
-      throw new Error(`Unknown projection name: "${name}"`)
+      throw new Error(`Unknown projection name: "${name}".\nSee https://github.com/njam/citygml-to-3dtiles#option-srsprojections for details.`)
     }
     return this.projections[name]
   }
