@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "caporal": "^0.10.0",
-    "cesium": "^1.43.0",
+    "cesium": "1.43.0",
     "convexhull-js": "^1.0.0",
     "fs-extra": "^5.0.0",
     "gltf-pipeline": "^1.0.2",
