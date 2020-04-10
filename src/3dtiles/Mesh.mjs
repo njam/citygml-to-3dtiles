@@ -3,7 +3,7 @@
  * https://github.com/AnalyticalGraphicsInc/3d-tiles-tools/blob/master/samples-generator/lib/Mesh.js
  */
 import Cesium from 'cesium'
-import Material from './Material'
+import Material from './Material.mjs'
 
 export default Mesh
 

@@ -1,5 +1,5 @@
 import Triangle from './Triangle.mjs'
-import Tesselator from './Tesselator'
+import Tesselator from './Tesselator.mjs'
 
 class LinearRing {
   /**

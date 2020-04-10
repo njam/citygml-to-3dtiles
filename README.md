@@ -27,12 +27,23 @@ Usage
 
 ### CLI Script
 The library provides an executable to convert files on the command line.
-To convert a CityGML XML file to a 3D Tileset with 10GB memory limit:
+1. Make sure you have NodeJS version 13+ installed!
 ```
-node \
-  --max-old-space-size=10000 \  # 10GB memory
-  --experimental-modules \      # The code uses ESM JS-modules, so this needs to be enabled
-  ./bin/citygml-to-3dtiles.mjs <input.xml> <output/>
+node --version
+```
+2. Install the NPM package
+```
+npm install -g citygml-to-3dtiles
+```
+3. Use the script to convert CityGML to 3D Tiles
+```
+citygml-to-3dtiles "my-citygml.xml" "my-output-folder/"
+```
+
+When converting large files, it can be necessary to increase NodeJS' memory limit.
+For example run the conversion with a 10GB memory limit: 
+```
+NODE_OPTIONS=--max-old-space-size=10000 citygml-to-3dtiles "my-citygml.xml" "my-output-folder/"
 ```
 
 Instead of a single input file the script also accepts a path to a folder containing multiple CityGML files.
