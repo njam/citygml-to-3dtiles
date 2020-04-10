@@ -1,6 +1,6 @@
 import Cesium from 'cesium'
 import libtess from 'libtess'
-import Triangle from './Triangle'
+import Triangle from './Triangle.mjs'
 
 let tessy
 
