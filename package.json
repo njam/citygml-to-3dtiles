@@ -7,7 +7,7 @@
     "node": ">=13.0.0"
   },
   "dependencies": {
-    "caporal": "^0.10.0",
+    "caporal": "^1.4.0",
     "cesium": "1.43.0",
     "convexhull-js": "^1.0.0",
     "fs-extra": "^5.0.0",
