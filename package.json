@@ -1,6 +1,6 @@
 {
   "name": "citygml-to-3dtiles",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": "https://github.com/njam/citygml-to-3dtiles",
   "license": "Apache-2.0",
   "engines": {
