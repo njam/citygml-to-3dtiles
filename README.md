@@ -153,6 +153,10 @@ npm test
 ```
 
 Release a new version:
-1. Bump version in `package.json`
-2. Push a new tag to master
-3. The Travis build will deploy to NPM
+1. Check out the latest version
+  - `git checkout master && git pull --ff-only`
+2. Bump version in `package.json`, commit.
+3. Push a new tag to master
+  - `git tag "vX.Y.Z"`
+  - `git push && git push --tags`
+4. The Github-Actions CI will deploy to NPM
