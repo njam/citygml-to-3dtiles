@@ -83,7 +83,7 @@ class CityObject {
     if (posLists.length === 0) {
       return null
     }
-    let coordinates = posLists[0].getTextAsCoordinates()
+    let coordinates = posLists[0].getTextAsCoordinatesCartesian()
     if (coordinates.length === 0) {
       return null
     }

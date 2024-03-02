@@ -14,8 +14,8 @@ class Envelope {
    * @returns {BoundingBox}
    */
   getBoundingBox () {
-    let lowerCorner = this.cityNode.selectCityNode('./gml:lowerCorner').getTextAsCoordinates1()
-    let upperCorner = this.cityNode.selectCityNode('./gml:upperCorner').getTextAsCoordinates1()
+    let lowerCorner = this.cityNode.selectCityNode('./gml:lowerCorner').getTextAsCoordinates1Cartographic()
+    let upperCorner = this.cityNode.selectCityNode('./gml:upperCorner').getTextAsCoordinates1Cartographic()
     return new BoundingBox(lowerCorner, upperCorner)
   }
 
