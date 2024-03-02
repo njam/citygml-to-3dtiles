@@ -149,7 +149,7 @@ class CityNode {
   /**
    * @returns {Cesium.Cartesian3[]}
    */
-  getTextAsCoordinatesCartesian() {
+  getTextAsCoordinatesCartesian () {
     return this.getTextAsCoordinatesCartographic().map((point) => {
       return Cesium.Cartographic.toCartesian(point)
     })
@@ -158,7 +158,7 @@ class CityNode {
   /**
    * @returns {Cesium.Cartographic}
    */
-  getTextAsCoordinates1Cartographic() {
+  getTextAsCoordinates1Cartographic () {
     let coords = this.getTextAsCoordinatesCartographic()
     if (coords.length !== 1) {
       throw new Error('Expected 1 coordinates, but found ' + coords.length)
@@ -169,7 +169,7 @@ class CityNode {
   /**
    * @returns {Cesium.Cartesian3}
    */
-  getTextAsCoordinates1Cartesian() {
+  getTextAsCoordinates1Cartesian () {
     let point = this.getTextAsCoordinates1Cartographic()
     return Cesium.Cartographic.toCartesian(point)
   }
