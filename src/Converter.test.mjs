@@ -32,12 +32,12 @@ describe('Converter', async function () {
 
     it('should create the correct B3DM region', () => {
       chai.assert.deepEqual(b3dm.getRegion(), [
-        0.14907335694208532,
-        0.8268099146975589,
-        0.14908126185163723,
-        0.8268101310946895,
-        372.8139593142252,
-        459.6138361611206,
+        0.14907155162642596,
+        0.826804434491562,
+        0.14908311706269073,
+        0.8268148017875332,
+        403.19936,
+        432.65393,
       ])
     })
 
@@ -82,11 +82,11 @@ describe('Converter', async function () {
     it('should create the correct B3DM region', () => {
       chai.assert.deepEqual(b3dm.getRegion(), [
         -0.8846020828104612,
-        1.5515922059263938,
+        1.5515922059263958,
         -0.8845940828005763,
-        1.5515936762937024,
-        1.862645149230957e-9,
-        9.000000074429806,
+        1.551593676293702,
+        0,
+        9,
       ])
     })
 
@@ -134,12 +134,12 @@ describe('Converter', async function () {
 
     it('should create the correct B3DM region', () => {
       chai.assert.deepEqual(b3dm.getRegion(), [
-        0.07601011853885128,
+        0.07601011853885127,
         0.9075773939506161,
         0.07648148496824216,
         0.9078300429446181,
         0,
-        100.00000000055493,
+        100,
       ])
     })
 

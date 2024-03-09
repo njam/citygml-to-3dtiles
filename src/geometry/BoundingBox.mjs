@@ -2,8 +2,8 @@ import Cesium from 'cesium'
 
 class BoundingBox {
   /**
-   * @param {Cesium.Cartesian3} min
-   * @param {Cesium.Cartesian3} max
+   * @param {Cesium.Cartographic} min
+   * @param {Cesium.Cartographic} max
    */
   constructor (min, max) {
     this.min = min
@@ -11,44 +11,44 @@ class BoundingBox {
   }
 
   /**
-   * @returns {Cesium.Cartesian3[]}
+   * @returns {Cesium.Cartographic[]}
    */
   getPoints () {
     return [this.min, this.max]
   }
 
   /**
-   * @returns {Cesium.Cartesian3}
+   * @returns {Cesium.Cartographic}
    */
   getMin () {
     return this.min
   }
 
   /**
-   * @returns {Cesium.Cartesian3}
+   * @returns {Cesium.Cartographic}
    */
   getMax () {
     return this.max
   }
 
   /**
-   * @param {Cesium.Cartesian3[]} points
+   * @param {Cesium.Cartographic[]} points
    * @returns {BoundingBox}
    */
   static fromPoints (points) {
     if (points.length < 1) {
       throw new Error('Invalid number of points: ' + points.length)
     }
-    let min = Cesium.Cartesian3.clone(points[0])
-    let max = Cesium.Cartesian3.clone(min)
+    let min = points[0].clone()
+    let max = min.clone()
     points.forEach(point => {
-      min.x = Math.min(min.x, point.x)
-      min.y = Math.min(min.y, point.y)
-      min.z = Math.min(min.z, point.z)
+      min.longitude = Math.min(min.longitude, point.longitude)
+      min.latitude = Math.min(min.latitude, point.latitude)
+      min.height = Math.min(min.height, point.height)
 
-      max.x = Math.max(max.x, point.x)
-      max.y = Math.max(max.y, point.y)
-      max.z = Math.max(max.z, point.z)
+      max.longitude = Math.max(max.longitude, point.longitude)
+      max.latitude = Math.max(max.latitude, point.latitude)
+      max.height = Math.max(max.height, point.height)
     })
     return new BoundingBox(min, max)
   }

@@ -32,9 +32,7 @@ class Batched3DModel {
    * @returns {Number[]}
    */
   getRegion () {
-    let points = this.boundingBox.getPoints().map(point => {
-      return Cesium.Cartographic.fromCartesian(point)
-    })
+    let points = this.boundingBox.getPoints()
     let longitudes = [points[0].longitude, points[1].longitude]
     let latitudes = [points[0].latitude, points[1].latitude]
     let heights = [points[0].height, points[1].height]

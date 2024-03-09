@@ -20,9 +20,9 @@ class Building extends CityObject {
       this.rings = this.cityNode.selectCityNodes('.//gml:Polygon//gml:LinearRing')
         .map(ringNode => {
           let pos = ringNode.selectCityNodes('./gml:pos')
-          let points = pos.map(n => n.getTextAsCoordinates1())
+          let points = pos.map(n => n.getTextAsCoordinates1Cartesian())
           if (points.length === 0) {
-            points = ringNode.selectCityNode('./gml:posList').getTextAsCoordinates()
+            points = ringNode.selectCityNode('./gml:posList').getTextAsCoordinatesCartesian()
           }
 
           if (points.length < 4) {
