@@ -155,7 +155,7 @@ npm test
 Release a new version:
 1. Check out the latest version
   - `git checkout master && git pull --ff-only`
-2. Bump version in `package.json`, commit.
+2. Bump version in `package.json`, run `npm install` and commit the change.
 3. Push a new tag to master
   - `git tag "vX.Y.Z"`
   - `git push && git push --tags`
