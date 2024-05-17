@@ -8,8 +8,9 @@ import Tileset from './3dtiles/Tileset.mjs'
 import SRSTranslator from './citygml/SRSTranslator.mjs'
 import fs from 'fs'
 import Path from 'path'
+import fsExtra from "fs-extra";
 
-class Converter {
+export class Converter {
 
   /**
    * @param {Object} [options]
@@ -18,7 +19,10 @@ class Converter {
     this.options = Object.assign({
       propertiesGetter: null,
       objectFilter: null,
-      srsProjections: {}
+      srsProjections: {},
+      tilingScheme: {
+        tileResolution: 1,
+      },
     }, options)
   }
 
@@ -49,10 +53,72 @@ class Converter {
 
     console.debug(`Converting to 3D Tiles...`)
     let boundingBox = BoundingBox.fromBoundingBoxes(boundingBoxes)
-    let tileset = await this.convertCityObjects(cityObjects, boundingBox)
+
+    let tileBoxes = this._getTilingScheme(boundingBox)
+    let tiles = await Promise.all(tileBoxes.map(box => {
+      const objects = []
+
+      console.log(`  Converting tile ${box.index[0]}/${box.index[1]} ...`)
+
+      for (const obj of cityObjects) {
+        if (box.bbox.contains(obj.getCenter())) {
+          objects.push(obj)
+        }
+      }
+
+      return this.convertCityObjects(objects, box.bbox)
+    }))
 
     console.debug(`Writing 3D Tiles...`)
-    await tileset.writeToFolder(outputFolder)
+
+    let data = {
+      asset: {
+        version: '0.0'
+      },
+      geometricError: 9999,
+      root: {
+        refine: 'ADD',
+        boundingVolume: {
+          region: [
+            boundingBox.min.longitude,
+            boundingBox.min.latitude,
+            boundingBox.max.longitude,
+            boundingBox.max.latitude,
+            0,
+            boundingBox.max.height,
+          ]
+        },
+        geometricError: 999,
+        children: []
+      }
+    }
+
+    await Promise.all(tiles.map(async (tileset, i) => {
+      let [ilat, ilon] = tileBoxes[i].index
+      let path = Path.join(ilat.toString(), ilon.toString());
+
+      console.log(`  Writing tile ${ilat}/${ilon} ...`)
+      data.root.children.push({
+        refine: 'ADD',
+        boundingVolume: {
+          region: [
+            tileBoxes[i].bbox.min.longitude,
+            tileBoxes[i].bbox.min.latitude,
+            tileBoxes[i].bbox.max.longitude,
+            tileBoxes[i].bbox.max.latitude,
+            tileBoxes[i].bbox.min.height,
+            tileBoxes[i].bbox.max.height,
+          ]
+        },
+        geometricError: 99,
+        content: {
+          uri: Path.join(".", path, "tileset.json").toString().replaceAll('\\', '/'),
+        }
+      })
+      await tileset.writeToFolder(Path.join(outputFolder, path))
+    }))
+
+    fsExtra.outputFile(Path.join(outputFolder, "tileset.json"), JSON.stringify(data, null, 2))
     console.debug('Done.')
   }
 
@@ -63,6 +129,39 @@ class Converter {
   async convertCityDocument (cityDocument) {
     let cityModel = cityDocument.getCityModel()
     return await this.convertCityObjects(cityModel.getCityObjects(), cityModel.getBoundingBox())
+  }
+
+  /**
+   * @param  {BoundingBox} boundingBox
+   * @return {{bbox: BoundingBox, index: number[]}[]}
+   * @private
+   */
+  _getTilingScheme (boundingBox) {
+    const tileResolution = this.options.tilingScheme.tileResolution;
+    let tileSizeLat = (boundingBox.getMax().latitude - boundingBox.getMin().latitude) / tileResolution
+    let tileSizeLng = (boundingBox.getMax().longitude - boundingBox.getMin().longitude) / tileResolution
+
+    let boxes = []
+    for (let lat = 0; lat < tileResolution; lat++) {
+      for (let lng = 0; lng < tileResolution; lng++) {
+        const min = boundingBox.getMin().clone()
+        min.latitude += tileSizeLat * lat;
+        min.longitude += tileSizeLng * lng;
+        min.height = 0;
+
+        const max = boundingBox.getMin().clone()
+        max.latitude += tileSizeLat * (lat + 1);
+        max.longitude += tileSizeLng * (lng + 1);
+        max.height = boundingBox.max.height
+
+        boxes.push({
+          bbox: new BoundingBox(min, max),
+          index:[lat, lng]
+        })
+      }
+    }
+
+    return boxes
   }
 
   /**

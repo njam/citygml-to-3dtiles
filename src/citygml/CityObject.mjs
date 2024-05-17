@@ -20,6 +20,10 @@ class CityObject {
     return new Envelope(envelopeNode)
   }
 
+  getCenter() {
+    return this.getEnvelope().getBoundingBox().getCenter()
+  }
+
   /**
    * @returns {TriangleMesh}
    */

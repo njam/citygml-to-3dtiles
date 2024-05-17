@@ -1,6 +1,7 @@
 import LinearRing from '../../geometry/LinearRing.mjs'
 import TriangleMesh from '../../geometry/TriangleMesh.mjs'
 import CityObject from '../CityObject.mjs'
+import Envelope from "../Envelope.mjs";
 
 class Building extends CityObject {
 
@@ -35,6 +36,17 @@ class Building extends CityObject {
         .filter(ring => !!ring)
     }
     return this.rings
+  }
+
+  /**
+   * @returns {Envelope|Null}
+   */
+  getEnvelope () {
+    let envelopeNode = this.cityNode.findCityNode('./gml:boundedBy/gml:Envelope')
+    if (!envelopeNode) {
+      return null
+    }
+    return new Envelope(envelopeNode)
   }
 
   /**
