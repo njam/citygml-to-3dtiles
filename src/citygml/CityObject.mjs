@@ -20,6 +20,10 @@ class CityObject {
     return new Envelope(envelopeNode)
   }
 
+  get id() {
+    return this.cityNode.getAttribute('gml:id')
+  }
+
   /**
    * @returns {TriangleMesh}
    */
