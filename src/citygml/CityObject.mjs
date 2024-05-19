@@ -20,6 +20,9 @@ class CityObject {
     return new Envelope(envelopeNode)
   }
 
+  /**
+   * @returns {String} This object's ID ("gml:id")
+   */
   get id() {
     return this.cityNode.getAttribute('gml:id')
   }
