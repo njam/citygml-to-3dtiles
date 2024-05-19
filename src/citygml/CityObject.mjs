@@ -21,6 +21,13 @@ class CityObject {
   }
 
   /**
+   * @returns {String} This object's ID ("gml:id")
+   */
+  get id() {
+    return this.cityNode.getAttribute('gml:id')
+  }
+
+  /**
    * @returns {TriangleMesh}
    */
   getTriangleMesh () {
