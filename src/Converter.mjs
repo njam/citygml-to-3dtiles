@@ -18,7 +18,10 @@ class Converter {
     this.options = Object.assign({
       propertiesGetter: null,
       objectFilter: null,
-      srsProjections: {}
+      srsProjections: {},
+      coordinateTransform: {
+        snapToGround: false,
+      }
     }, options)
   }
 
@@ -33,7 +36,7 @@ class Converter {
     let cityObjects = [], boundingBoxes = []
     inputPaths.forEach((inputPath, i) => {
       console.debug(`Reading CityGML file ${i + 1}/${inputPaths.length}...`)
-      let cityDocument = CityDocument.fromFile(inputPath, srsTranslator)
+      let cityDocument = CityDocument.fromFile(inputPath, srsTranslator, this.options.coordinateTransform)
       let cityModel = cityDocument.getCityModel()
       let objs = cityModel.getCityObjects()
       console.debug(` Found ${objs.length} city objects.`)

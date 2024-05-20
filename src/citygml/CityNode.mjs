@@ -125,7 +125,7 @@ class CityNode {
   /**
    * @returns {Cesium.Cartographic[]}
    */
-  getTextAsCoordinatesCartographic () {
+  getTextAsCoordinatesCartographic (offset = 0) {
     let srs = this.getSRS()
     let srsTranslator = this.document.getSRSTranslator()
 
@@ -140,7 +140,7 @@ class CityNode {
       point = point.map(p => parseFloat(p))
       point = point.map(p => isNaN(p) ? 0 : p)
       point = srsTranslator.forward(point, srs, 'WGS84')
-      point = Cesium.Cartographic.fromDegrees(point[0], point[1], point[2])
+      point = Cesium.Cartographic.fromDegrees(point[0], point[1], point[2] + offset)
       points.push(point)
     }
     return points
@@ -149,8 +149,8 @@ class CityNode {
   /**
    * @returns {Cesium.Cartesian3[]}
    */
-  getTextAsCoordinatesCartesian () {
-    return this.getTextAsCoordinatesCartographic().map((point) => {
+  getTextAsCoordinatesCartesian (offset = 0) {
+    return this.getTextAsCoordinatesCartographic(offset).map((point) => {
       return Cesium.Cartographic.toCartesian(point)
     })
   }
@@ -158,8 +158,8 @@ class CityNode {
   /**
    * @returns {Cesium.Cartographic}
    */
-  getTextAsCoordinates1Cartographic () {
-    let coords = this.getTextAsCoordinatesCartographic()
+  getTextAsCoordinates1Cartographic (offset = 0) {
+    let coords = this.getTextAsCoordinatesCartographic(offset)
     if (coords.length !== 1) {
       throw new Error('Expected 1 coordinates, but found ' + coords.length)
     }
@@ -169,8 +169,8 @@ class CityNode {
   /**
    * @returns {Cesium.Cartesian3}
    */
-  getTextAsCoordinates1Cartesian () {
-    let point = this.getTextAsCoordinates1Cartographic()
+  getTextAsCoordinates1Cartesian (offset = 0) {
+    let point = this.getTextAsCoordinates1Cartographic(offset)
     return Cesium.Cartographic.toCartesian(point)
   }
 
