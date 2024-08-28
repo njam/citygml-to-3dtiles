@@ -4,7 +4,9 @@ citygml-to-3dtiles
 [![Build Status](https://img.shields.io/github/actions/workflow/status/njam/citygml-to-3dtiles/test.yml)](https://github.com/njam/citygml-to-3dtiles/actions/workflows/test.yml)
 [![npm](https://img.shields.io/npm/v/citygml-to-3dtiles.svg)](https://www.npmjs.com/package/citygml-to-3dtiles)
 
-A very *basic and experimental* converter from [CityGML](https://www.citygml.org/) to [Cesium 3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles).
+A very *basic and experimental* converter from [CityGML](https://www.citygml.org/) to [Cesium 3D Tiles](https://github.com/CesiumGS/3d-tiles).
+
+Note that this tool is generating 3D Tiles v1.0, while the current format is v1.1.
 
 About
 -----
