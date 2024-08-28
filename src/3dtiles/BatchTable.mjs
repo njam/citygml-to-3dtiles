@@ -1,29 +1,29 @@
 /**
- * @see https://github.com/AnalyticalGraphicsInc/3d-tiles/blob/master/TileFormats/BatchTable/README.md
+ * @see https://github.com/CesiumGS/3d-tiles/blob/1.0/specification/TileFormats/BatchTable/README.md
  */
 class BatchTable {
 
   constructor () {
-    this.features = {}
+    this.items = {}
   }
 
   /**
-   * @param {String|Number} id
+   * @param {String|Number} batchId
    * @param {Object} properties
    */
-  addFeature (id, properties) {
-    id = String(id)
-    if (this.features[id]) {
-      throw new Error('A feature with this ID already exists: ' + id)
+  addBatchItem (batchId, properties) {
+    batchId = String(batchId)
+    if (this.items[batchId]) {
+      throw new Error('An item with this ID already exists: ' + batchId)
     }
-    this.features[id] = properties
+    this.items[batchId] = properties
   }
 
   /**
    * @returns {String[]}
    */
-  getIds () {
-    return Object.keys(this.features)
+  getBatchIds () {
+    return Object.keys(this.items)
   }
 
   /**
@@ -31,8 +31,8 @@ class BatchTable {
    */
   getPropertyNames () {
     let propertyNames = {}
-    for (const id in this.features) {
-      let properties = this.features[id]
+    for (const id in this.items) {
+      let properties = this.items[id]
       for (const name in properties) {
         propertyNames[name] = true
       }
@@ -44,7 +44,7 @@ class BatchTable {
    * @returns {Object}
    */
   getBatchTableJson () {
-    let ids = this.getIds()
+    let ids = this.getBatchIds()
     let propertyNames = this.getPropertyNames()
 
     let batchTable = {
@@ -52,7 +52,7 @@ class BatchTable {
     }
     propertyNames.forEach(name => {
       batchTable[name] = ids.map((id, i) => {
-        let value = this.features[id][name]
+        let value = this.items[id][name]
         if (typeof value === 'undefined') {
           value = null
         }
@@ -67,7 +67,7 @@ class BatchTable {
    * @returns {Number}
    */
   getLength () {
-    return Object.keys(this.features).length
+    return Object.keys(this.items).length
   }
 
   /**
@@ -75,8 +75,8 @@ class BatchTable {
    */
   getMinMax () {
     let minmax = {}
-    for (const id in this.features) {
-      let properties = this.features[id]
+    for (const id in this.items) {
+      let properties = this.items[id]
       for (const name in properties) {
         let value = properties[name]
         if (typeof value === 'number') {

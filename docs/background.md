@@ -109,5 +109,5 @@ Together these two pieces of information (models' geometry and models' propertie
 
 
 [citygml]: https://www.citygml.org/
-[3d-tiles]: https://github.com/AnalyticalGraphicsInc/3d-tiles
+[3d-tiles]: https://github.com/CesiumGS/3d-tiles
 [gltf]: https://www.khronos.org/gltf/

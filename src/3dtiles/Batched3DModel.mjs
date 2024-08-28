@@ -3,7 +3,7 @@ import createB3dm from './createB3dm.mjs'
 import Cesium from 'cesium'
 
 /**
- * @see https://github.com/AnalyticalGraphicsInc/3d-tiles/blob/master/TileFormats/Batched3DModel/README.md
+ * @see https://github.com/CesiumGS/3d-tiles/blob/1.0/specification/TileFormats/Batched3DModel/README.md
  */
 class Batched3DModel {
   /**

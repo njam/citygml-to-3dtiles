@@ -78,7 +78,7 @@ class Converter {
 
     let batchTable = new BatchTable()
     cityObjects.forEach((cityObject, i) => {
-      batchTable.addFeature(i, this._getProperties(cityObject))
+      batchTable.addBatchItem(i, this._getProperties(cityObject))
     })
 
     let gltf = await createGltf({
