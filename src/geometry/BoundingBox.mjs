@@ -20,6 +20,17 @@ class BoundingBox {
   /**
    * @returns {Cesium.Cartographic}
    */
+  getCenter() {
+    return new Cesium.Cartographic(
+      this.min.longitude + (this.max.longitude - this.min.longitude) / 2,
+      this.min.latitude + (this.max.latitude - this.min.latitude) / 2,
+      this.min.height + (this.max.height - this.min.height) / 2,
+    )
+  }
+
+  /**
+   * @returns {Cesium.Cartographic}
+   */
   getMin () {
     return this.min
   }
@@ -29,6 +40,16 @@ class BoundingBox {
    */
   getMax () {
     return this.max
+  }
+
+  /**
+   * @param {Cesium.Cartographic} c
+   * @return {boolean}
+   */
+  contains(c) {
+    return c.latitude >= this.min.latitude && c.latitude < this.max.latitude &&
+           c.longitude >= this.min.longitude && c.longitude < this.max.longitude &&
+           c.height >= this.min.height && c.height < this.max.height;
   }
 
   /**

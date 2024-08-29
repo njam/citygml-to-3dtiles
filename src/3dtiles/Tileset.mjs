@@ -1,4 +1,3 @@
-import Batched3DModel from './Batched3DModel.mjs'
 import fsExtra from 'fs-extra'
 import path from 'path'
 
@@ -28,7 +27,7 @@ class Tileset {
         },
         geometricError: 0.0,
         content: {
-          url: tileName
+          url: "./" + tileName
         }
       }
     }
