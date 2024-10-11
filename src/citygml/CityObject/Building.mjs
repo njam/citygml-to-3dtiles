@@ -17,12 +17,17 @@ class Building extends CityObject {
    */
   getLinearRings () {
     if (!this.rings) {
+      let heightOffset = 0;
+      if (this.cityNode.document.getCoordinateTransformOptions().snapToGround) {
+        heightOffset = -this.getEnvelope().getBoundingBox().min.height;
+      }
+
       this.rings = this.cityNode.selectCityNodes('.//gml:Polygon//gml:LinearRing')
         .map(ringNode => {
           let pos = ringNode.selectCityNodes('./gml:pos')
-          let points = pos.map(n => n.getTextAsCoordinates1Cartesian())
+          let points = pos.map(n => n.getTextAsCoordinates1Cartesian(heightOffset))
           if (points.length === 0) {
-            points = ringNode.selectCityNode('./gml:posList').getTextAsCoordinatesCartesian()
+            points = ringNode.selectCityNode('./gml:posList').getTextAsCoordinatesCartesian(heightOffset)
           }
 
           if (points.length < 4) {

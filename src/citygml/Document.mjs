@@ -9,10 +9,12 @@ class Document {
   /**
    * @param {Document} xmlDoc
    * @param {SRSTranslator} srsTranslator
+   * @param {{snapToGround: boolean}} coordinateTransformOptions
    */
-  constructor (xmlDoc, srsTranslator) {
+  constructor (xmlDoc, srsTranslator, coordinateTransformOptions) {
     this.xmlDoc = xmlDoc
     this.srsTranslator = srsTranslator
+    this.coordinateTransformOptions = coordinateTransformOptions
   }
 
   /**
@@ -20,6 +22,13 @@ class Document {
    */
   getSRSTranslator () {
     return this.srsTranslator
+  }
+
+  /**
+   * @return {{snapToGround: boolean}}
+   */
+  getCoordinateTransformOptions() {
+    return this.coordinateTransformOptions
   }
 
   /**
@@ -34,9 +43,10 @@ class Document {
   /**
    * @param {String} path
    * @param {SRSTranslator} [srsTranslator]
+   * @param {{snapToGround: boolean}} coordinateTransformOptions
    * @returns {Document}
    */
-  static fromFile (path, srsTranslator) {
+  static fromFile (path, srsTranslator, coordinateTransformOptions) {
     if (!srsTranslator) {
       srsTranslator = new SRSTranslator()
     }
@@ -47,7 +57,7 @@ class Document {
       },
     })
     let dom = domParser.parseFromString(data)
-    return new Document(dom, srsTranslator)
+    return new Document(dom, srsTranslator, coordinateTransformOptions)
   }
 
 }
